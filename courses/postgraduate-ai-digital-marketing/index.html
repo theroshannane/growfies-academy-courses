@@ -276,6 +276,117 @@ footer a:hover{color:#fff}
 .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
 .f-bottom{padding-top:24px;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-size:12.5px}
 
+/* Bonus Bundle Showcase */
+.bonus-showcase {
+  background: linear-gradient(135deg, #0B132B 0%, #161B22 100%);
+  color: #fff;
+  border-radius: var(--r);
+  padding: 44px 40px;
+  margin-bottom: 70px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.bonus-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.bonus-img-wrap img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.15);
+  display: block;
+}
+
+/* Hiring Partners Section */
+.partners-card-sec {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 44px 40px;
+  margin-bottom: 70px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.03);
+}
+.partners-img-wrap img {
+  width: 100%;
+  max-width: 1060px;
+  border-radius: 16px;
+  display: block;
+  margin: 24px auto 0;
+}
+
+/* Founder Spotlight */
+.founder-card-sec {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 44px 40px;
+  margin-bottom: 70px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.03);
+}
+.founder-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.founder-pic-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  border: 4px solid #fff;
+}
+.founder-pic-wrap img {
+  width: 100%;
+  max-height: 480px;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Alumni Cards */
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 70px;
+}
+.alumni-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+}
+.alumni-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.alumni-top img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--jade);
+}
+.alumni-name { font-weight: 800; font-size: 15px; color: var(--ink); }
+.alumni-role { font-size: 12px; color: var(--jade); font-weight: 700; }
+.alumni-prev { font-size: 11px; color: var(--muted); }
+.alumni-quote {
+  font-size: 13.5px;
+  color: var(--body);
+  line-height: 1.6;
+  font-style: italic;
+  flex: 1;
+}
+
 @media(max-width:960px){
   .telemetry{grid-template-columns:repeat(2,1fr)}
   .market-stats-strip{grid-template-columns:1fr;gap:24px}
@@ -284,11 +395,15 @@ footer a:hover{color:#fff}
   .curr-grid{grid-template-columns:1fr}
   .fee-card{grid-template-columns:1fr;padding:30px 24px}
   .footer-grid{grid-template-columns:1fr 1fr}
+  .bonus-grid{grid-template-columns:1fr}
+  .founder-grid{grid-template-columns:1fr}
+  .alumni-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:640px){
   .telemetry{grid-template-columns:1fr}
   .crumb-bar{display:none}
   .footer-grid{grid-template-columns:1fr}
+  .alumni-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -966,6 +1081,176 @@ footer a:hover{color:#fff}
         <span>EMI Partners:</span>
         <span>HDFC</span> • <span>ICICI</span> • <span>Axis</span> • <span>Kotak</span> • <span>Bajaj Finserv</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNFAIR ADVANTAGE BONUS STACK & WORDPRESS PRO SUITE -->
+<section class="wrap sec" id="bonuses">
+  <div class="bonus-showcase">
+    <div class="bonus-grid">
+      <div>
+        <span class="sec-badge" style="background:rgba(0,245,160,0.15);color:var(--mint)">₹2,29,000 VALUE INCLUDED FREE</span>
+        <h2 style="font-family:var(--fd);font-size:32px;font-weight:900;color:#fff;margin-bottom:14px;line-height:1.2">
+          The Unfair Advantage Enrolment Stack
+        </h2>
+        <p style="color:#CBD5E1;font-size:15px;line-height:1.6;margin-bottom:24px">
+          Every admitted student receives 100% free access to our enterprise developer software suite, agency assets, and preparatory training. You build client-ready infrastructure without paying a single rupee out of pocket.
+        </p>
+
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px">
+            <div style="font-size:12px;font-weight:800;color:var(--mint);font-family:var(--fm);margin-bottom:2px">BONUS 1 · WORTH ₹2,00,000 FREE</div>
+            <strong style="color:#fff;font-size:15px">Complete WordPress Pro Plugin Developer Suite</strong>
+            <p style="color:#94A3B8;font-size:13px;margin-top:4px">Elementor Pro, RankMath Pro, Divi, Yoast, WP Rocket, AC Pro, WPForms + 15 More developer plugins with real agency lifetime access.</p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px">
+            <div style="font-size:12px;font-weight:800;color:var(--mint);font-family:var(--fm);margin-bottom:2px">BONUS 2 · WORTH ₹29,000 FREE</div>
+            <strong style="color:#fff;font-size:15px">2-Week AI Readiness Bridge Course</strong>
+            <p style="color:#94A3B8;font-size:13px;margin-top:4px">Zero-code foundation covering prompt engineering, marketing logic with AI, Zapier automation, and Agentic AI 101.</p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px">
+            <div style="font-size:12px;font-weight:800;color:var(--mint);font-family:var(--fm);margin-bottom:2px">BONUS 3 · 1-YEAR PRO ACCESS</div>
+            <strong style="color:#fff;font-size:15px">2,720+ Growfies Autonomous Marketing Agents</strong>
+            <p style="color:#94A3B8;font-size:13px;margin-top:4px">Proprietary library of AI prompts, autonomous media buying agents, and MarTech automation templates.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bonus-img-wrap">
+        <img src="/courses/assets/wordpress-plugins-bundle.png" alt="₹2,00,000 WordPress Pro Plugin Bundle Included Free" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 50+ OFFICIAL HIRING PARTNERS NETWORK -->
+<section class="wrap sec" id="hiring-partners">
+  <div class="partners-card-sec">
+    <span class="sec-badge">Direct Agency & Enterprise Tie-Ups</span>
+    <h2 style="font-family:var(--fd);font-size:32px;font-weight:900;color:var(--ink);margin-bottom:10px">
+      50+ Official Hiring Partners Nationwide
+    </h2>
+    <p style="font-size:15px;color:var(--body);max-width:760px;margin:0 auto 16px;line-height:1.6">
+      Growfies Academy & MarketInc alumni work across top global agencies, Fortune 500 enterprises, and fast-growing consumer unicorns.
+    </p>
+
+    <div style="display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;font-family:var(--fm);font-size:12px;color:var(--muted);margin-bottom:20px">
+      <span>🏢 <strong>500+</strong> Total Network Tie-Ups</span>
+      <span>💼 <strong>100%</strong> Placement Assistance</span>
+      <span>💰 <strong>₹16L–₹24L</strong> High-Bracket Roles</span>
+      <span>🎯 <strong>Guaranteed</strong> Direct Interviews</span>
+    </div>
+
+    <div class="partners-img-wrap">
+      <img src="/courses/assets/hiring-partners-full.png" alt="50+ Official Hiring Partners: Amazon, Accenture, Tata Digital, Media.net, Ogilvy, Schbang, Kinnect, Purplle, Dentsu" />
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER & PROGRAM DIRECTOR SPOTLIGHT -->
+<section class="wrap sec" id="leadership">
+  <div class="founder-card-sec">
+    <div class="founder-grid">
+      <div class="founder-pic-wrap">
+        <img src="/courses/assets/roshan-nane-founder.png" alt="Roshan Nane Founder MarketInc & Growfies Academy" />
+      </div>
+
+      <div>
+        <span class="sec-badge">Program Director & Agency Veteran</span>
+        <h2 style="font-family:var(--fd);font-size:32px;font-weight:900;color:var(--ink);margin-bottom:6px">
+          Led by Roshan Nane
+        </h2>
+        <div style="font-size:14px;font-weight:700;color:var(--jade);margin-bottom:14px;font-family:var(--fm)">
+          Founder @ MarketInc & Growfies Academy · Recipient, Indian Achievers' Forum Award
+        </div>
+        
+        <p style="font-size:15px;color:var(--body);line-height:1.65;margin-bottom:16px">
+          "Most digital marketing courses in India are taught by professors who haven't launched an ad campaign in 5 years. At Growfies Academy powered by MarketInc, we flipped the model completely. Every student receives live ad spend budgets, hands-on access to enterprise MarTech stacks, and builds automated AI workflows from day one."
+        </p>
+
+        <p style="font-size:14.5px;color:var(--body);line-height:1.6;margin-bottom:20px">
+          With <strong>11+ years of hands-on agency leadership</strong>, managing <strong>₹12Cr+ in digital ad spends</strong> and training <strong>20,000+ students & professionals</strong>, Roshan personally architects the PG curriculum in collaboration with Jain University's JAINx and AICPE.
+        </p>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap">
+          <button onclick="openModal('Book 1-on-1 Mentorship Session')" class="btn-primary" style="padding:12px 24px;font-size:14px">
+            Book 1-on-1 Profile Assessment →
+          </button>
+          <a href="https://wa.me/917400351422?text=Hi%20Roshan%2C%20I%20have%20questions%20about%20the%20PG%20Certificate%20Program" target="_blank" class="btn-whatsapp" style="padding:12px 22px;font-size:14px">
+            💬 WhatsApp Mentor Helpline
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALUMNI SUCCESS STORIES -->
+<section class="wrap sec" id="testimonials">
+  <div class="sec-title">
+    <span class="sec-badge">Proven Outcomes</span>
+    <h2>From Classrooms to Career Leaps</h2>
+    <p>Read how real professionals transformed their career trajectory through our rigorous hands-on program.</p>
+  </div>
+
+  <div class="alumni-grid">
+    <div class="alumni-card">
+      <div class="alumni-top">
+        <img src="/courses/assets/student-kanishka.png" alt="Kanishka Singh" />
+        <div>
+          <div class="alumni-name">Kanishka Singh</div>
+          <div class="alumni-role">Media Lead @ Schbang</div>
+          <div class="alumni-prev">Ex-Marketing Executive</div>
+        </div>
+      </div>
+      <p class="alumni-quote">
+        "The live ad budget spend gave me the exact hands-on data proof I needed during my interview. I cleared three rounds effortlessly and secured an 85% salary hike."
+      </p>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-top">
+        <img src="/courses/assets/student-rakhee.jpeg" alt="Rakhee Sawant" />
+        <div>
+          <div class="alumni-name">Rakhee Sawant</div>
+          <div class="alumni-role">Senior Performance Specialist</div>
+          <div class="alumni-prev">Tata Digital</div>
+        </div>
+      </div>
+      <p class="alumni-quote">
+        "Working directly with Roshan sir on real client accounts was the game-changer. The Agentic AI marketing workflows helped me double my CTC within 5 months of graduating."
+      </p>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-top">
+        <img src="/courses/assets/student-swati.jpeg" alt="Swati Sharma" />
+        <div>
+          <div class="alumni-name">Swati Sharma</div>
+          <div class="alumni-role">Growth Strategist</div>
+          <div class="alumni-prev">Dentsu Creative</div>
+        </div>
+      </div>
+      <p class="alumni-quote">
+        "The dual JAINx and AICPE certificate carries immense institutional weight. Combined with Looker Studio ROI dashboards in my portfolio, top agency recruiters noticed me immediately."
+      </p>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-top">
+        <img src="/courses/assets/student-mavia.png" alt="Mavia Shaikh" />
+        <div>
+          <div class="alumni-name">Mavia Shaikh</div>
+          <div class="alumni-role">Digital Associate</div>
+          <div class="alumni-prev">Media.net</div>
+        </div>
+      </div>
+      <p class="alumni-quote">
+        "From day 1 in the ₹29k Bridge course, everything was structured and practical. No fluff, just real agency execution. Got placed before the final module ended!"
+      </p>
     </div>
   </div>
 </section>
