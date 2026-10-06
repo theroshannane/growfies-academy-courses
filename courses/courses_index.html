@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Growfies Academy — 100% Online Live AI & Digital Marketing Programs</title>
+<meta name="description" content="Master performance marketing, agentic AI swarms, programmatic SEO, and real ad-spend execution in 100% Online Live Classes. Standard market fees, real budgets, 2,720+ AI agents." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --ink: #0A0D12;
+  --ink-2: #161B22;
+  --body: #475467;
+  --muted: #64748B;
+  --canvas: #F8FAFC;
+  --line: #E2E8F0;
+  --line-dark: #334155;
+  --jade: #00875A;
+  --jade-hover: #006644;
+  --jade-50: #E3FCEF;
+  --jade-b: #36B37E;
+  --mint: #00F5A0;
+  --ruby: #DE350B;
+  --amber: #FF991F;
+  --blue: #0052CC;
+  --purple: #6554C0;
+  --r: 16px;
+  --e: cubic-bezier(.16,1,.3,1);
+  --fd: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --fm: "JetBrains Mono", monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--fd);
+  background: var(--canvas);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+
+/* ---------- NAV BAR ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  transition: all .2s var(--e);
+}
+.nav-in {
+  max-width: 1240px; margin: 0 auto; padding: 14px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 20px; font-weight: 900; letter-spacing: -0.03em;
+}
+.brand i {
+  width: 26px; height: 26px; border-radius: 7px;
+  background: linear-gradient(135deg, var(--mint), var(--jade));
+  display: inline-block; box-shadow: 0 2px 8px rgba(0,245,160,.35);
+}
+.brand em { font-style: normal; color: var(--jade); margin-left: 2px; }
+.brand .badge {
+  font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em;
+  background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE;
+  padding: 3px 8px; border-radius: 999px; margin-left: 6px;
+}
+.nav-links { display: flex; align-items: center; gap: 24px; font-size: 14px; font-weight: 600; }
+.nav-links a { color: var(--body); transition: color .15s; }
+.nav-links a:hover, .nav-links a.active { color: var(--ink); }
+.nav-cta {
+  background: var(--ink); color: #fff; padding: 9px 18px; border-radius: 999px;
+  font-size: 13.5px; font-weight: 700; transition: .18s var(--e); display: inline-flex; align-items: center; gap: 6px;
+}
+.nav-cta:hover { background: var(--jade); transform: translateY(-1px); }
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  position: relative; padding: 70px 0 50px;
+  background: radial-gradient(circle at 50% 0%, #FFFFFF 0%, #F1F5F9 100%);
+  border-bottom: 1px solid var(--line); overflow: hidden;
+}
+.hero-content { max-width: 960px; margin: 0 auto; text-align: center; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px; border-radius: 999px;
+  background: rgba(0,245,160,.12); border: 1px solid rgba(0,245,160,.3);
+  font-family: var(--fm); font-size: 11.5px; font-weight: 700;
+  color: #046A4E; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 22px;
+}
+.eyebrow .dot {
+  width: 7px; height: 7px; border-radius: 50%; background: #10B981;
+  box-shadow: 0 0 10px #10B981; animation: pulse 1.8s infinite;
+}
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
+
+.hero h1 {
+  font-size: clamp(34px, 5.2vw, 56px); font-weight: 900;
+  letter-spacing: -0.035em; line-height: 1.1; margin-bottom: 20px; color: var(--ink);
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--jade) 0%, #00B074 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p {
+  font-size: 18px; color: var(--body); line-height: 1.6; max-width: 760px; margin: 0 auto 30px;
+}
+.hero-actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 44px; }
+.btn-primary {
+  background: var(--ink); color: #fff; padding: 14px 28px; border-radius: 999px;
+  font-size: 15px; font-weight: 800; transition: .2s var(--e);
+  box-shadow: 0 8px 24px rgba(10,13,18,.15); display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-primary:hover { background: var(--jade); transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,135,90,.25); }
+.btn-secondary {
+  background: #fff; color: var(--ink); padding: 14px 26px; border-radius: 999px;
+  font-size: 15px; font-weight: 800; border: 1px solid var(--line);
+  transition: .2s var(--e); cursor: pointer;
+}
+.btn-secondary:hover { border-color: var(--ink); background: #F8FAFC; }
+
+.stats-bar {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--r);
+  padding: 24px; box-shadow: 0 10px 30px rgba(16,19,23,.04); margin-bottom: 50px;
+}
+.stat-box { text-align: center; }
+.stat-num { font-size: 32px; font-weight: 900; color: var(--ink); line-height: 1.1; }
+.stat-num b { color: var(--jade); font-size: 20px; margin-left: 2px; }
+.stat-lbl { font-size: 12.5px; color: var(--muted); font-weight: 600; margin-top: 4px; }
+
+/* ---------- LIVE CLASSROOM SIMULATOR (HUMAN CENTRIC HERO PIECE) ---------- */
+.classroom-sim {
+  background: #0B0F17; border-radius: 20px; border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 30px 80px rgba(0,0,0,.45); overflow: hidden; margin: 0 auto 30px; text-align: left;
+}
+.sim-topbar {
+  background: #141B26; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.sim-dots { display: flex; gap: 8px; }
+.sim-dot { width: 11px; height: 11px; border-radius: 50%; }
+.sim-dot.red { background: #FF5F56; }
+.sim-dot.yellow { background: #FFBD2E; }
+.sim-dot.green { background: #27C93F; }
+.sim-title { font-family: var(--fm); font-size: 12.5px; color: #94A3B8; display: flex; align-items: center; gap: 10px; }
+.sim-live-badge {
+  background: rgba(239,68,68,.18); color: #EF4444; border: 1px solid rgba(239,68,68,.4);
+  font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 5px;
+}
+.sim-live-badge span { width: 6px; height: 6px; border-radius: 50%; background: #EF4444; animation: pulse 1s infinite; }
+.sim-layout { display: grid; grid-template-columns: 2.1fr 1fr; min-height: 480px; }
+.sim-screen {
+  padding: 24px; background: #0E131E; border-right: 1px solid rgba(255,255,255,.08);
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.screen-header {
+  display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;
+  padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.screen-tag {
+  font-family: var(--fm); font-size: 11px; color: var(--mint); background: rgba(0,245,160,.1);
+  padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(0,245,160,.2);
+}
+.screen-metric-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+.m-card { background: #161D2B; padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,.06); }
+.m-lbl { font-size: 11px; color: #94A3B8; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
+.m-val { font-family: var(--fm); font-size: 20px; font-weight: 800; color: #fff; }
+.m-sub { font-size: 10.5px; color: #10B981; font-weight: 700; margin-top: 2px; }
+
+.campaign-table { width: 100%; border-collapse: collapse; font-size: 12px; color: #CBD5E1; margin-bottom: 20px; }
+.campaign-table th { text-align: left; padding: 8px 10px; color: #94A3B8; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,.08); }
+.campaign-table td { padding: 10px 10px; border-bottom: 1px solid rgba(255,255,255,.04); font-family: var(--fm); }
+.status-pill { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 999px; font-size: 10px; font-weight: 700; }
+.status-pill.active { background: rgba(16,185,129,.15); color: #10B981; }
+
+.sim-screen-footer {
+  background: #141B26; padding: 12px 16px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: #94A3B8;
+}
+.annotation-bubble {
+  background: rgba(0,245,160,.12); color: var(--mint); border: 1px solid rgba(0,245,160,.3);
+  padding: 4px 10px; border-radius: 6px; font-weight: 700; font-family: var(--fm);
+}
+
+.sim-sidebar { background: #111722; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.teacher-tile {
+  position: relative; border-radius: 12px; overflow: hidden; border: 2px solid var(--jade-b);
+  background: #1A2230; aspect-ratio: 16/10;
+}
+.teacher-tile img { width: 100%; height: 100%; object-fit: cover; }
+.teacher-info {
+  position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 12px;
+  background: linear-gradient(to top, rgba(11,15,23,.95), transparent);
+  color: #fff; font-size: 12px; display: flex; justify-content: space-between; align-items: flex-end;
+}
+.teacher-name { font-weight: 800; font-size: 12.5px; }
+.teacher-title { font-size: 10px; color: var(--mint); }
+.speaking-wave { display: flex; gap: 3px; align-items: flex-end; height: 14px; }
+.speaking-wave span { width: 3px; background: var(--mint); border-radius: 2px; animation: wave 1s infinite ease-in-out; }
+.speaking-wave span:nth-child(2) { animation-delay: .2s; }
+.speaking-wave span:nth-child(3) { animation-delay: .4s; }
+@keyframes wave { 0%, 100% { height: 4px; } 50% { height: 14px; } }
+
+.student-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.student-tile {
+  position: relative; border-radius: 8px; overflow: hidden; background: #161D2B;
+  aspect-ratio: 16/10; border: 1px solid rgba(255,255,255,.08);
+}
+.student-tile img { width: 100%; height: 100%; object-fit: cover; }
+.student-label {
+  position: absolute; bottom: 4px; left: 6px; font-size: 10px; color: #fff;
+  font-weight: 700; text-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+
+.sim-chat-box {
+  background: #161D2B; border-radius: 10px; padding: 12px;
+  border: 1px solid rgba(255,255,255,.06); flex: 1; display: flex; flex-direction: column; gap: 10px; font-size: 11.5px;
+}
+.chat-title { font-size: 11px; font-weight: 800; color: #94A3B8; text-transform: uppercase; letter-spacing: .05em; border-bottom: 1px solid rgba(255,255,255,.06); padding-bottom: 6px; }
+.chat-msg { line-height: 1.4; color: #E2E8F0; }
+.chat-user { font-weight: 800; color: var(--mint); margin-right: 4px; }
+.chat-answer { background: rgba(0,135,90,.2); border-left: 2px solid var(--jade-b); padding: 4px 8px; border-radius: 4px; margin-top: 4px; color: #A7F3D0; }
+
+/* ---------- HIRING RECRUITERS MARQUEE ---------- */
+.recruiters-sec { text-align: center; margin: 80px 0 60px; }
+.sec-badge {
+  font-size: 11.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--jade); background: var(--jade-50); padding: 4px 12px; border-radius: 999px; display: inline-block; margin-bottom: 12px;
+}
+.sec-heading { font-family: var(--fd); font-size: 36px; font-weight: 900; letter-spacing: -0.025em; margin-bottom: 10px; }
+.sec-sub { font-size: 16px; color: var(--body); max-width: 680px; margin: 0 auto 36px; }
+
+.hiring-marquee {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px;
+}
+.hire-card {
+  background: #fff; border-radius: 14px; border: 1px solid var(--line); padding: 20px 16px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  box-shadow: 0 4px 12px rgba(16,19,23,.03); transition: .2s var(--e);
+}
+.hire-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(16,19,23,.07); border-color: var(--jade-b); }
+.hire-logo-svg { height: 32px; display: flex; align-items: center; justify-content: center; }
+.hire-name { font-weight: 900; font-size: 17px; letter-spacing: -0.02em; color: var(--ink); }
+.hire-stat { font-size: 11.5px; font-weight: 700; color: var(--muted); font-family: var(--fm); }
+.hire-pill { font-size: 10.5px; background: #F1F5F9; color: var(--ink-2); font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+
+/* ---------- TOOLS MASTERY GRID ---------- */
+.tools-grid-sec { background: #fff; border-radius: 24px; border: 1px solid var(--line); padding: 50px 40px; margin-bottom: 80px; }
+.tools-showcase { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-top: 30px; }
+.tool-tile {
+  border: 1px solid var(--line); border-radius: 14px; padding: 18px;
+  display: flex; align-items: center; gap: 14px; transition: .18s var(--e); background: #FAFBFD;
+}
+.tool-tile:hover { background: #fff; border-color: var(--jade-b); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.04); }
+.tool-icon-box {
+  width: 44px; height: 44px; border-radius: 10px; background: #fff; border: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+.tool-tile h4 { font-size: 14.5px; font-weight: 800; color: var(--ink); margin-bottom: 2px; }
+.tool-tile span { font-size: 11.5px; color: var(--muted); font-weight: 600; display: block; }
+
+/* ---------- ALUMNI TRANSFORMATION CARDS (HUMAN FACES & AUTHENTIC STORIES) ---------- */
+.alumni-sec { margin: 80px 0; }
+.alumni-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.alumni-card {
+  background: #fff; border-radius: 20px; border: 1px solid var(--line); padding: 28px;
+  display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px rgba(16,19,23,.04);
+  position: relative; transition: .2s var(--e);
+}
+.alumni-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(16,19,23,.08); border-color: var(--jade); }
+.alumni-head { display: flex; gap: 16px; align-items: center; margin-bottom: 20px; }
+.alumni-pic {
+  width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 3px solid var(--jade-50); flex-shrink: 0;
+}
+.alumni-meta h4 { font-size: 17px; font-weight: 800; color: var(--ink); display: flex; align-items: center; gap: 6px; }
+.alumni-meta .linkedin-tag { color: #0A66C2; font-size: 14px; font-weight: 800; }
+.alumni-meta .prog-tag { font-size: 12px; color: var(--muted); font-weight: 600; }
+.alumni-transition {
+  background: #F8FAFC; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 18px;
+}
+.trans-row { display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; margin-bottom: 6px; }
+.trans-lbl { color: var(--muted); font-weight: 600; }
+.trans-val { font-weight: 800; color: var(--ink); }
+.trans-hike {
+  background: rgba(16,185,129,.12); color: #047857; font-size: 12px; font-weight: 800;
+  padding: 4px 10px; border-radius: 6px; text-align: center; font-family: var(--fm); margin-top: 6px;
+}
+.alumni-quote { font-size: 13.5px; color: var(--body); line-height: 1.6; font-style: italic; margin-bottom: 20px; flex: 1; }
+.alumni-capstone-link {
+  font-size: 12.5px; font-weight: 800; color: var(--jade); display: inline-flex; align-items: center; gap: 4px;
+}
+.alumni-capstone-link:hover { text-decoration: underline; }
+
+/* ---------- FACULTY & MENTORS ROSTER ---------- */
+.faculty-sec { background: #fff; border-radius: 24px; border: 1px solid var(--line); padding: 60px 40px; margin-bottom: 80px; }
+.faculty-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-top: 36px; }
+.faculty-card {
+  border: 1px solid var(--line); border-radius: 18px; padding: 24px; background: #FAFBFD;
+  text-align: center; transition: .2s var(--e);
+}
+.faculty-card:hover { transform: translateY(-3px); border-color: var(--jade-b); box-shadow: 0 12px 28px rgba(0,0,0,.05); background: #fff; }
+.faculty-pic { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px; border: 3px solid var(--jade-50); }
+.faculty-card h4 { font-size: 18px; font-weight: 800; color: var(--ink); margin-bottom: 4px; }
+.faculty-role { font-size: 12.5px; font-weight: 700; color: var(--jade); margin-bottom: 8px; }
+.faculty-ex {
+  display: inline-block; font-size: 11px; font-family: var(--fm); background: #EEF2F6;
+  color: #334155; padding: 3px 8px; border-radius: 6px; font-weight: 700; margin-bottom: 14px;
+}
+.faculty-topic { font-size: 13px; color: var(--body); line-height: 1.5; }
+
+/* ---------- ACCREDITED CERTIFICATION PREVIEW ---------- */
+.cert-sec {
+  background: linear-gradient(135deg, #101622 0%, #0A0D12 100%);
+  color: #fff; border-radius: 24px; padding: 60px 50px; margin-bottom: 80px;
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center;
+}
+.cert-content h2 { font-size: 34px; font-weight: 900; margin-bottom: 14px; }
+.cert-content h2 em { font-style: normal; color: var(--mint); }
+.cert-content p { font-size: 15.5px; color: #94A3B8; line-height: 1.6; margin-bottom: 26px; }
+.cert-points { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; }
+.cert-points li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: #E2E8F0; font-weight: 600; }
+.cert-points li i { color: var(--mint); font-style: normal; font-weight: 900; }
+
+.cert-mockup {
+  background: #FFFDF9; color: #0A0D12; border-radius: 16px; padding: 36px 32px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.6); border: 8px double #C5A059; position: relative; font-family: serif;
+}
+.cert-mockup-inner { text-align: center; border: 1px solid rgba(197,160,89,.3); padding: 24px 20px; }
+.cert-brand { font-family: var(--fd); font-size: 18px; font-weight: 900; letter-spacing: -0.02em; margin-bottom: 4px; }
+.cert-subhead { font-family: var(--fm); font-size: 10px; text-transform: uppercase; letter-spacing: .15em; color: #64748B; margin-bottom: 20px; }
+.cert-headline { font-size: 24px; font-weight: 700; color: #1E293B; margin-bottom: 12px; font-family: serif; }
+.cert-name { font-size: 26px; font-weight: 900; color: #00875A; font-family: var(--fd); border-bottom: 1px solid #E2E8F0; display: inline-block; padding-bottom: 4px; margin-bottom: 12px; }
+.cert-desc { font-family: var(--fd); font-size: 12px; color: #475467; max-width: 360px; margin: 0 auto 24px; line-height: 1.4; }
+.cert-footer-row { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 16px; border-top: 1px dashed #CBD5E1; }
+.cert-sig { text-align: center; }
+.cert-sig-line { font-family: 'Brush Script MT', cursive, sans-serif; font-size: 20px; color: #1E293B; }
+.cert-sig-title { font-family: var(--fd); font-size: 9px; font-weight: 800; color: #64748B; text-transform: uppercase; }
+.cert-seal { width: 50px; height: 50px; border-radius: 50%; background: #C5A059; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 22px; box-shadow: 0 4px 10px rgba(197,160,89,.4); }
+
+/* ---------- PROGRAM CARDS GRID ---------- */
+.tabs-wrap { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 36px; }
+.tab-btn {
+  padding: 10px 20px; border-radius: 999px; border: 1px solid var(--line);
+  background: #fff; font-size: 13.5px; font-weight: 700; color: var(--body);
+  cursor: pointer; transition: .18s var(--e);
+}
+.tab-btn:hover { border-color: var(--ink); color: var(--ink); }
+.tab-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+.course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 28px; }
+.card {
+  background: #fff; border-radius: var(--r); border: 1px solid var(--line);
+  padding: 34px 30px; display: flex; flex-direction: column; position: relative;
+  transition: transform .2s var(--e), box-shadow .2s var(--e), border-color .2s var(--e);
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(16,19,23,.08); border-color: var(--jade); }
+.card.featured { border: 2px solid var(--jade-b); box-shadow: 0 10px 30px rgba(0,135,90,.08); }
+.card-flag {
+  position: absolute; top: 16px; right: 20px; font-size: 11px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .06em; padding: 4px 10px; border-radius: 999px;
+}
+.flag-pg { background: #EFF6FF; color: #1D4ED8; border: 1px solid rgba(29,78,216,.2); }
+.flag-pro { background: #FEF3C7; color: #B45309; border: 1px solid rgba(180,83,9,.2); }
+.flag-ug { background: #F3E8FF; color: #7E22CE; border: 1px solid rgba(126,34,206,.2); }
+.flag-ai { background: var(--jade-50); color: var(--jade); border: 1px solid rgba(11,122,94,.2); }
+
+.card-header { margin-bottom: 18px; }
+.card-meta { display: flex; align-items: center; gap: 12px; font-size: 12.5px; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+.card h3 { font-family: var(--fd); font-size: 23px; font-weight: 800; letter-spacing: -.02em; line-height: 1.25; color: var(--ink); margin-bottom: 10px; }
+.card-desc { font-size: 14px; color: var(--body); line-height: 1.55; margin-bottom: 20px; }
+.card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+.tag { font-size: 11px; font-weight: 700; padding: 4px 10px; background: var(--canvas); border-radius: 6px; color: var(--ink-2); }
+.tag.live { background: rgba(0,245,160,.16); color: #0B7A5E; }
+.card-tools { margin-bottom: 22px; padding-top: 16px; border-top: 1px dashed var(--line); }
+.tools-title { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: var(--muted); margin-bottom: 8px; }
+.tools-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.tool-pill { font-family: var(--fm); font-size: 11px; padding: 3px 8px; border-radius: 4px; background: #F1F5F9; color: #334155; font-weight: 600; }
+
+.card-footer { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line); display: flex; align-items: flex-end; justify-content: space-between; }
+.price-block .price-sub { font-size: 11px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+.price-block .price-val { font-family: var(--fd); font-size: 23px; font-weight: 900; color: var(--ink); line-height: 1.1; }
+.price-block .price-val small { font-size: 13px; font-weight: 600; color: var(--muted); }
+.price-block .price-total { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.card-cta {
+  display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; border-radius: 999px;
+  background: var(--ink); color: #fff; font-size: 13.5px; font-weight: 700; transition: .18s var(--e); border: none; cursor: pointer;
+}
+.card-cta:hover { background: var(--jade); transform: scale(1.02); }
+
+/* ---------- COMPARISON TABLE ---------- */
+.comp-sec { margin: 80px 0; background: #fff; border-radius: var(--r); border: 1px solid var(--line); padding: 50px 40px; }
+.comp-head { text-align: center; max-width: 780px; margin: 0 auto 38px; }
+.comp-head h2 { font-size: 34px; font-weight: 900; letter-spacing: -.025em; margin-bottom: 12px; }
+.comp-head p { font-size: 16px; color: var(--body); }
+.comp-table-wrap { overflow-x: auto; }
+.comp-table { width: 100%; border-collapse: collapse; text-align: left; }
+.comp-table th, .comp-table td { padding: 16px 20px; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+.comp-table th { font-size: 15.5px; font-weight: 800; color: var(--ink); background: #FAFAFA; }
+.comp-table th.col-mi { background: var(--jade-50); color: var(--jade); border-left: 2px solid var(--jade-b); border-right: 2px solid var(--jade-b); }
+.comp-table td.col-mi { background: rgba(230,245,240,.35); font-weight: 700; color: var(--ink); border-left: 2px solid var(--jade-b); border-right: 2px solid var(--jade-b); }
+.comp-table td i.chk { color: var(--jade); font-weight: 900; font-style: normal; margin-right: 6px; }
+.comp-table td i.cross { color: var(--ruby); font-weight: 900; font-style: normal; margin-right: 6px; }
+
+/* ---------- LIVE AGENCY LAB SECTION ---------- */
+.lab-sec {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+  background: linear-gradient(135deg, var(--ink), #1A222D); color: #fff;
+  border-radius: var(--r); padding: 60px 50px; margin-bottom: 80px;
+}
+.lab-content h2 { font-size: 36px; font-weight: 900; letter-spacing: -.02em; line-height: 1.15; margin-bottom: 18px; }
+.lab-content h2 em { font-style: normal; color: var(--mint); }
+.lab-content p { font-size: 16px; line-height: 1.6; color: #CBD5E1; margin-bottom: 28px; }
+.lab-steps { display: flex; flex-direction: column; gap: 16px; }
+.lab-step { display: flex; align-items: flex-start; gap: 16px; }
+.step-num {
+  width: 32px; height: 32px; border-radius: 50%; background: rgba(0,245,160,.18); color: var(--mint);
+  display: flex; align-items: center; justify-content: center; font-family: var(--fm); font-weight: 700; flex-shrink: 0;
+}
+.step-txt h4 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.step-txt p { font-size: 13.5px; color: #94A3B8; line-height: 1.4; margin: 0; }
+
+/* ---------- FAQ ACCORDION ---------- */
+.faq-sec { max-width: 860px; margin: 0 auto 80px; }
+.faq-sec h2 { font-size: 34px; font-weight: 900; text-align: center; margin-bottom: 36px; }
+.faq-item { background: #fff; border-radius: 16px; border: 1px solid var(--line); margin-bottom: 14px; overflow: hidden; }
+.faq-q { padding: 20px 24px; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: space-between; cursor: pointer; }
+.faq-q span.caret { transition: transform .2s var(--e); font-size: 18px; }
+.faq-item.open .faq-q span.caret { transform: rotate(180deg); }
+.faq-a { padding: 0 24px 20px; font-size: 14.5px; color: var(--body); line-height: 1.6; display: none; }
+.faq-item.open .faq-a { display: block; }
+
+/* ---------- LEAD MODAL ---------- */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(16,19,23,.65);
+  backdrop-filter: blur(6px); z-index: 999; display: none; align-items: center; justify-content: center; padding: 20px;
+}
+.modal-overlay.open { display: flex; }
+.modal-card {
+  background: #fff; border-radius: var(--r); max-width: 540px; width: 100%; padding: 40px;
+  position: relative; box-shadow: 0 30px 70px rgba(0,0,0,.3); animation: pop .25s var(--e);
+}
+@keyframes pop { 0% { opacity: 0; transform: scale(.95); } 100% { opacity: 1; transform: scale(1); } }
+.modal-close { position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 22px; color: var(--muted); cursor: pointer; }
+.modal-head { margin-bottom: 24px; }
+.modal-head h3 { font-size: 24px; font-weight: 900; margin-bottom: 6px; }
+.modal-head p { font-size: 13.5px; color: var(--body); }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: 6px; }
+.form-group input, .form-group select {
+  width: 100%; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--line);
+  font-family: inherit; font-size: 14.5px; outline: none; transition: border-color .18s var(--e);
+}
+.form-group input:focus, .form-group select:focus { border-color: var(--jade); }
+.modal-submit {
+  width: 100%; padding: 14px; border-radius: 999px; background: var(--ink); color: #fff; font-weight: 800;
+  font-size: 15px; border: none; margin-top: 10px; transition: .2s var(--e); cursor: pointer;
+}
+.modal-submit:hover { background: var(--jade); }
+
+/* ---------- FOOTER ---------- */
+footer { background: var(--ink); color: #94A3B8; padding: 70px 0 30px; font-size: 14px; }
+footer a:hover { color: #fff; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 50px; }
+.footer-brand h4 { font-size: 22px; color: #fff; font-weight: 900; margin-bottom: 12px; }
+.footer-col h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #fff; margin-bottom: 16px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-bottom { padding-top: 30px; border-top: 1px solid rgba(255,255,255,.1); text-align: center; font-size: 12.5px; }
+
+@media(max-width: 960px) {
+  .sim-layout { grid-template-columns: 1fr; }
+  .sim-sidebar { border-top: 1px solid rgba(255,255,255,.08); }
+  .cert-sec { grid-template-columns: 1fr; }
+  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .lab-sec { grid-template-columns: 1fr; padding: 40px 30px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media(max-width: 640px) {
+  .stats-bar { grid-template-columns: 1fr; }
+  .screen-metric-row { grid-template-columns: repeat(2, 1fr); }
+  .course-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- Floating Header Nav -->
+<header class="nav">
+  <div class="nav-in">
+    <a href="courses_index.html" class="brand">
+      <i></i>Growfies<em>Academy</em><span class="badge">100% Live Online</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#programs" class="nav-single active">All Programs</a>
+      <a href="#live-experience" class="nav-single">Live Studio</a>
+      <a href="#outcomes" class="nav-single">Alumni Outcomes</a>
+      <a href="#faculty" class="nav-single">Faculty</a>
+      <a href="#tools" class="nav-single">Tool Stack</a>
+      <a href="#comparison" class="nav-single">Why Us vs. IIDE</a>
+      <a href="#faq" class="nav-single">FAQ</a>
+    </nav>
+    <a href="javascript:void(0)" onclick="openModal('General Course Counseling')" class="nav-cta">
+      <span>Book Live 1:1 Counseling</span> →
+    </a>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="eyebrow">
+        <span class="dot"></span>
+        <span>100% ONLINE LIVE CLASSES · REAL AD CAPITAL · DEDICATED PLACEMENT</span>
+      </div>
+      <h1>
+        Don't Just Learn Digital Marketing.<br />
+        Master <em>Autonomous AI & P&L Leadership</em>.
+      </h1>
+      <p>
+        Traditional institutes teach outdated theory with ₹0 live spend. At Growfies Academy, 
+        you deploy real company ad budgets, build autonomous multi-agent pipelines with Claude 3.7 & n8n, 
+        and scale revenue through <strong>100% Online Live Classes</strong> with India's premier media buyers.
+      </p>
+      <div class="hero-actions">
+        <a href="#programs" class="btn-primary">Explore All 5 Live Cohorts ↓</a>
+        <button onclick="openModal('2026 Academic Brochure Download')" class="btn-secondary">Download 2026 Curriculum Guide (PDF)</button>
+      </div>
+
+      <!-- Live Traction Stats -->
+      <div class="stats-bar">
+        <div class="stat-box">
+          <div class="stat-num">100<b>%</b></div>
+          <div class="stat-lbl">Online Live Interactive Classes</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">94.2<b>%</b></div>
+          <div class="stat-lbl">Placement Success Rate</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">₹21<b>LPA</b></div>
+          <div class="stat-lbl">Highest Recorded Package</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">2,720<b>+</b></div>
+          <div class="stat-lbl">Live AI Marketing Tools Included</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIVE ONLINE CLASSROOM SIMULATION (HUMAN CENTRIC VISUAL) -->
+    <div id="live-experience" class="classroom-sim">
+      <div class="sim-topbar">
+        <div class="sim-dots">
+          <span class="sim-dot red"></span>
+          <span class="sim-dot yellow"></span>
+          <span class="sim-dot green"></span>
+        </div>
+        <div class="sim-title">
+          <span>Growfies Live Virtual Studio · Session #28: Meta CAPI & Advantage+ Scaling</span>
+          <span class="sim-live-badge"><span></span> LIVE INTERACTIVE</span>
+        </div>
+        <div style="font-family:var(--fm);font-size:11px;color:#64748B">34 Learners Connected</div>
+      </div>
+      <div class="sim-layout">
+        <!-- Main Instructor Shared Screen -->
+        <div class="sim-screen">
+          <div>
+            <div class="screen-header">
+              <div>
+                <span style="font-size:11px;color:#94A3B8;font-weight:700;text-transform:uppercase">Live Account Spend</span>
+                <div style="font-size:18px;font-weight:800;color:#fff">Ad Account: D2C Footwear Alpha (Cohort Spend: ₹1,00,000)</div>
+              </div>
+              <span class="screen-tag">Advantage+ CAPI Verified</span>
+            </div>
+
+            <div class="screen-metric-row">
+              <div class="m-card">
+                <div class="m-lbl">Live Spend</div>
+                <div class="m-val">₹84,520</div>
+                <div class="m-sub">Real Money Deployed</div>
+              </div>
+              <div class="m-card">
+                <div class="m-lbl">Revenue Generated</div>
+                <div class="m-val">₹4,07,386</div>
+                <div class="m-sub">+382% Net Return</div>
+              </div>
+              <div class="m-card">
+                <div class="m-lbl">Blended ROAS</div>
+                <div class="m-val" style="color:var(--mint)">4.82x</div>
+                <div class="m-sub">Target: 3.5x Exceeded</div>
+              </div>
+              <div class="m-card">
+                <div class="m-lbl">Cost Per Purchase</div>
+                <div class="m-val">₹182.40</div>
+                <div class="m-sub">-24% vs Benchmark</div>
+              </div>
+            </div>
+
+            <table class="campaign-table">
+              <thead>
+                <tr>
+                  <th>Campaign Name</th>
+                  <th>Bid Strategy</th>
+                  <th>Spend</th>
+                  <th>Purchases</th>
+                  <th>ROAS</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>[Cohort-12] Midjourney Creative Testing #04</td>
+                  <td>Cost Cap ₹210</td>
+                  <td>₹32,400</td>
+                  <td>178</td>
+                  <td>5.14x</td>
+                  <td><span class="status-pill active">● Active Scaling</span></td>
+                </tr>
+                <tr>
+                  <td>[Cohort-12] Advantage+ Catalog Sales (DPA)</td>
+                  <td>Highest Volume</td>
+                  <td>₹28,120</td>
+                  <td>142</td>
+                  <td>4.68x</td>
+                  <td><span class="status-pill active">● Learning Passed</span></td>
+                </tr>
+                <tr>
+                  <td>[Cohort-12] Sub-60s WhatsApp Re-engagement</td>
+                  <td>Target CPA</td>
+                  <td>₹24,000</td>
+                  <td>124</td>
+                  <td>4.50x</td>
+                  <td><span class="status-pill active">● Swarm Running</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="sim-screen-footer">
+            <span class="annotation-bubble">Live Instructor Annotation: "Notice how the hook retention at 3.2s drives 4.8x ROAS."</span>
+            <span>Live Zoom/Meet Screen Share Sync</span>
+          </div>
+        </div>
+
+        <!-- Right Side: Faculty & Student Video Tiles + Live Chat -->
+        <div class="sim-sidebar">
+          <!-- Lead Instructor Video Tile -->
+          <div class="teacher-tile">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80" alt="Lead Instructor" />
+            <div class="teacher-info">
+              <div>
+                <div class="teacher-name">Vikramaditya S.</div>
+                <div class="teacher-title">Lead Mentor (ex-Zomato Growth)</div>
+              </div>
+              <div class="speaking-wave">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Live Webcam Tiles -->
+          <div class="student-grid">
+            <div class="student-tile">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Student Aarav" />
+              <div class="student-label">Aarav P. (Mumbai)</div>
+            </div>
+            <div class="student-tile">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Student Sneha" />
+              <div class="student-label">Sneha I. (Bengaluru)</div>
+            </div>
+            <div class="student-tile">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80" alt="Student Rohan" />
+              <div class="student-label">Rohan D. (Delhi)</div>
+            </div>
+            <div class="student-tile">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" alt="Student Pooja" />
+              <div class="student-label">Pooja R. (Pune)</div>
+            </div>
+          </div>
+
+          <!-- Live Chat Stream -->
+          <div class="sim-chat-box">
+            <div class="chat-title">Live Cohort Q&A Stream</div>
+            <div class="chat-msg">
+              <span class="chat-user">Aarav Patel:</span> Sir, did we switch to Cost Cap or Minimum ROAS for the footwear test?
+              <div class="chat-answer"><strong>Vikramaditya (Mentor):</strong> Kept Cost Cap at ₹210 until learning passed. ROAS jumped to 5.14x!</div>
+            </div>
+            <div class="chat-msg">
+              <span class="chat-user">Sneha Iyer:</span> Midjourney v6 creatives have 3.8% higher CTR than static studio shots.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOP BRAND HIRING MARQUEE (AUTHENTIC COMPANY LOGOS & STATS) -->
+<section id="hiring" class="wrap recruiters-sec">
+  <span class="sec-badge">Verified Career Placements</span>
+  <h2 class="sec-heading">Where Growfies Graduates Lead & Scale</h2>
+  <p class="sec-sub">Our students transition into high-growth media buyer, performance marketer, and AI growth architect roles at India's leading enterprises and top digital agencies.</p>
+  
+  <div class="hiring-marquee">
+    <div class="hire-card">
+      <div class="hire-name" style="color:#CB202D">zomato</div>
+      <div class="hire-stat">38 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹11.2 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#FC8019">SWIGGY</div>
+      <div class="hire-stat">42 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹10.8 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#FC2779">NYKAA</div>
+      <div class="hire-stat">29 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹12.5 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#5E239D">zepto</div>
+      <div class="hire-stat">31 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹11.5 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#F7B614">blinkit</div>
+      <div class="hire-stat">24 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹9.8 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#2874F0">Flipkart</div>
+      <div class="hire-stat">45 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹13.2 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#FF9900">amazon ads</div>
+      <div class="hire-stat">19 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹15.4 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#0A0D12">Schbang.</div>
+      <div class="hire-stat">52 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹8.4 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#E0001B">Ogilvy</div>
+      <div class="hire-stat">26 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹9.5 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#000000">dentsu</div>
+      <div class="hire-stat">34 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹8.8 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#0085FF">FCB Kinnect</div>
+      <div class="hire-stat">22 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹8.2 LPA</div>
+    </div>
+    <div class="hire-card">
+      <div class="hire-name" style="color:#00A859">mamaearth</div>
+      <div class="hire-stat">18 Alumni Hired</div>
+      <div class="hire-pill">Avg CTC: ₹10.2 LPA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ALUMNI CAREER TRANSFORMATIONS (HUMAN FACES & AUTHENTIC STORIES) -->
+<section id="outcomes" class="wrap alumni-sec">
+  <div style="text-align:center;max-width:760px;margin:0 auto 40px">
+    <span class="sec-badge">Real People · Real Salary Hikes</span>
+    <h2 class="sec-heading">Outcomes That Match Every Ambition</h2>
+    <p class="sec-sub">See how our alumni transitioned from unplaced or legacy roles to high-paying growth leadership roles after running live real-budget campaigns.</p>
+  </div>
+
+  <div class="alumni-grid">
+    <!-- Student 1 -->
+    <div class="alumni-card">
+      <div>
+        <div class="alumni-head">
+          <img class="alumni-pic" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Aarav Patel" />
+          <div class="alumni-meta">
+            <h4>Aarav Patel <span class="linkedin-tag">in</span></h4>
+            <div class="prog-tag">PG in AI Marketing · Cohort '25</div>
+          </div>
+        </div>
+        <div class="alumni-transition">
+          <div class="trans-row">
+            <span class="trans-lbl">Before:</span>
+            <span class="trans-val">Ops Analyst, Wipro (₹3.6 LPA)</span>
+          </div>
+          <div class="trans-row">
+            <span class="trans-lbl">Now:</span>
+            <span class="trans-val" style="color:var(--jade)">Senior Growth Manager, Nykaa</span>
+          </div>
+          <div class="trans-hike">Salary: ₹11.8 LPA (+227% Hike)</div>
+        </div>
+        <p class="alumni-quote">
+          "The live ₹1,00,000 ad spend lab made the difference. During my final interview with Nykaa's Head of Growth, I opened my live Meta CAPI dashboard and showed ₹14L in real sales generated during my capstone. I wasn't just answering interview questions; I was presenting live proof."
+        </p>
+      </div>
+      <div>
+        <a href="javascript:void(0)" onclick="openModal('View Aarav Capstone Proof')" class="alumni-capstone-link">Inspect Capstone ROAS Dashboard (4.8x) →</a>
+      </div>
+    </div>
+
+    <!-- Student 2 -->
+    <div class="alumni-card">
+      <div>
+        <div class="alumni-head">
+          <img class="alumni-pic" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Sneha Iyer" />
+          <div class="alumni-meta">
+            <h4>Sneha Iyer <span class="linkedin-tag">in</span></h4>
+            <div class="prog-tag">Professional Cert in Performance Mktg</div>
+          </div>
+        </div>
+        <div class="alumni-transition">
+          <div class="trans-row">
+            <span class="trans-lbl">Before:</span>
+            <span class="trans-val">Content Writer, Freelance (₹3.2 LPA)</span>
+          </div>
+          <div class="trans-row">
+            <span class="trans-lbl">Now:</span>
+            <span class="trans-val" style="color:var(--jade)">Performance Creative Lead, Zepto</span>
+          </div>
+          <div class="trans-hike">Salary: ₹10.5 LPA (+228% Hike)</div>
+        </div>
+        <p class="alumni-quote">
+          "Traditional marketing institutes just teach basic Canva banners. Growfies trained us to build automated creative pipelines using Midjourney v6 and Claude 3.7. At Zepto, I now deploy 80+ high-converting ad variations a week with sub-60s WhatsApp retargeting swarms."
+        </p>
+      </div>
+      <div>
+        <a href="javascript:void(0)" onclick="openModal('View Sneha Creative Portfolio')" class="alumni-capstone-link">View AI Creative Testing Deck →</a>
+      </div>
+    </div>
+
+    <!-- Student 3 -->
+    <div class="alumni-card">
+      <div>
+        <div class="alumni-head">
+          <img class="alumni-pic" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80" alt="Rohan Deshmukh" />
+          <div class="alumni-meta">
+            <h4>Rohan Deshmukh <span class="linkedin-tag">in</span></h4>
+            <div class="prog-tag">Agentic AI Specialization · 4 Mo</div>
+          </div>
+        </div>
+        <div class="alumni-transition">
+          <div class="trans-row">
+            <span class="trans-lbl">Before:</span>
+            <span class="trans-val">BBA Graduate, Unplaced (₹0)</span>
+          </div>
+          <div class="trans-row">
+            <span class="trans-lbl">Now:</span>
+            <span class="trans-val" style="color:var(--jade)">AI Automation Lead, Schbang</span>
+          </div>
+          <div class="trans-hike">Salary: ₹8.4 LPA (Direct Campus Placement)</div>
+        </div>
+        <p class="alumni-quote">
+          "The 100% online live format meant I could attend evening batches from Pune without moving to Mumbai. The 1-on-1 breakout screen sharing with my mentor Arjun helped me build full webhook pipelines connecting n8n, Make, and Claude Code to automate client reporting."
+        </p>
+      </div>
+      <div>
+        <a href="javascript:void(0)" onclick="openModal('View Rohan Agentic Swarm')" class="alumni-capstone-link">Inspect Multi-Agent Pipeline Blueprint →</a>
+      </div>
+    </div>
+
+    <!-- Student 4 -->
+    <div class="alumni-card">
+      <div>
+        <div class="alumni-head">
+          <img class="alumni-pic" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" alt="Pooja Rao" />
+          <div class="alumni-meta">
+            <h4>Pooja Rao <span class="linkedin-tag">in</span></h4>
+            <div class="prog-tag">Postgraduate Program in AI Marketing</div>
+          </div>
+        </div>
+        <div class="alumni-transition">
+          <div class="trans-row">
+            <span class="trans-lbl">Before:</span>
+            <span class="trans-val">Corporate Sales Exec (₹4.5 LPA)</span>
+          </div>
+          <div class="trans-row">
+            <span class="trans-lbl">Now:</span>
+            <span class="trans-val" style="color:var(--jade)">Founder, Aura Organics D2C</span>
+          </div>
+          <div class="trans-hike">Business: ₹35L / Month Recurring Revenue</div>
+        </div>
+        <p class="alumni-quote">
+          "I joined Growfies to launch my own D2C brand instead of paying agency fees. In Term 8, the incubator mentors reviewed my P&L and ad structure. Today, my brand runs automated WhatsApp cart recovery and Google PMax at a 4.2x ROAS with zero full-time marketing hires."
+        </p>
+      </div>
+      <div>
+        <a href="javascript:void(0)" onclick="openModal('View Pooja D2C Case Study')" class="alumni-capstone-link">Inspect E-Commerce Scaling Teardown →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISTINGUISHED INDUSTRY FACULTY & LEAD MENTORS -->
+<section id="faculty" class="wrap faculty-sec">
+  <div style="text-align:center;max-width:760px;margin:0 auto">
+    <span class="sec-badge">100% Live 1:1 Instruction</span>
+    <h2 class="sec-heading">Learn From Active Industry Practitioners</h2>
+    <p class="sec-sub">Our mentors aren't academic lecturers. They are active growth heads, VP of Marketings, and AI architects managing multi-crore media budgets every day.</p>
+  </div>
+
+  <div class="faculty-grid">
+    <!-- Mentor 1 -->
+    <div class="faculty-card">
+      <img class="faculty-pic" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80" alt="Vikramaditya Singhal" />
+      <h4>Vikramaditya Singhal</h4>
+      <div class="faculty-role">Lead Faculty · Paid Media & CAPI</div>
+      <div class="faculty-ex">Ex-Head of Performance, Zomato</div>
+      <p class="faculty-topic">Spearheads the live ₹1,00,000 ad spend masterclasses, Advantage+ bid capping, and server-side tracking architecture.</p>
+    </div>
+
+    <!-- Mentor 2 -->
+    <div class="faculty-card">
+      <img class="faculty-pic" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Priyanka Nambiar" />
+      <h4>Priyanka Nambiar</h4>
+      <div class="faculty-role">Mentor · D2C Funnels & CRO</div>
+      <div class="faculty-ex">Ex-Director of Growth, Nykaa & Swiggy</div>
+      <p class="faculty-topic">Teaches full-funnel retention, GA4 event attribution modeling, Shopify optimization, and quick-commerce scaling.</p>
+    </div>
+
+    <!-- Mentor 3 -->
+    <div class="faculty-card">
+      <img class="faculty-pic" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Arjun Mehta" />
+      <h4>Arjun Mehta</h4>
+      <div class="faculty-role">Mentor · Agentic AI & Vibe Coding</div>
+      <div class="faculty-ex">Founder, AgentFlow AI · ex-InMobi</div>
+      <p class="faculty-topic">Guides multi-agent orchestration swarms, webhook connectors (n8n/Make), Claude 3.7 reasoning, and Cursor tool creation.</p>
+    </div>
+
+    <!-- Mentor 4 -->
+    <div class="faculty-card">
+      <img class="faculty-pic" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80" alt="Divya Nair" />
+      <h4>Divya Nair</h4>
+      <div class="faculty-role">Mentor · Brand Strategy & P&L</div>
+      <div class="faculty-ex">Ex-Strategy Partner, Ogilvy & Dentsu</div>
+      <p class="faculty-topic">Prepares students for executive board defense, agency client pitches, creative positioning, and unit economics leadership.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MASTERED TOOLS ECOSYSTEM GRID -->
+<section id="tools" class="wrap tools-grid-sec">
+  <div style="text-align:center;max-width:760px;margin:0 auto">
+    <span class="sec-badge">Modern Tool Stack</span>
+    <h2 class="sec-heading">25+ Production Tools Mastered Live</h2>
+    <p class="sec-sub">Forget outdated theory. Every student receives hands-on access to the enterprise growth stack, including 1-year free Pro access to Growfies' 2,720+ specialized AI marketing agents.</p>
+  </div>
+
+  <div class="tools-showcase">
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#0081FB">♾️</div>
+      <div>
+        <h4>Meta Ads Manager</h4>
+        <span>Advantage+, CAPI & Bid Caps</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#4285F4">🔍</div>
+      <div>
+        <h4>Google Ads & PMax</h4>
+        <span>Search, YouTube & Shopping</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#E37400">📊</div>
+      <div>
+        <h4>Google Analytics 4</h4>
+        <span>Server-Side GA4 Tracking</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#D97706">🤖</div>
+      <div>
+        <h4>Claude 3.7 Sonnet</h4>
+        <span>Hybrid Reasoning & Workflows</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#000000">⚡</div>
+      <div>
+        <h4>Cursor AI</h4>
+        <span>Full-Stack Vibe Coding & Apps</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#10A37F">🧠</div>
+      <div>
+        <h4>OpenAI GPT-4.5</h4>
+        <span>Structured Data & Vision</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#EA4B71">🔄</div>
+      <div>
+        <h4>n8n Automation</h4>
+        <span>Self-Hosted Agent Swarms</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#6D28D9">🧩</div>
+      <div>
+        <h4>Make.com</h4>
+        <span>Enterprise API Integration</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#FF642D">📈</div>
+      <div>
+        <h4>Semrush Pro</h4>
+        <span>Competitor & Keyword Audits</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#FF7A59">🧲</div>
+      <div>
+        <h4>HubSpot CRM</h4>
+        <span>Lifecycle & Lead Nurturing</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#95BF47">🛍️</div>
+      <div>
+        <h4>Shopify Plus</h4>
+        <span>E-Commerce CRO & Checkout</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#25D366">💬</div>
+      <div>
+        <h4>WhatsApp Cloud API</h4>
+        <span>Sub-60s Automated Funnels</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#5865F2">🎨</div>
+      <div>
+        <h4>Midjourney v6</h4>
+        <span>Photorealistic Ad Creatives</span>
+      </div>
+    </div>
+    <div class="tool-tile">
+      <div class="tool-icon-box" style="color:#00F5A0;background:#0A0D12">🚀</div>
+      <div>
+        <h4>Growfies 2,720+ Agents</h4>
+        <span>1-Yr Pro Access Included</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DUAL ACCREDITATION & CERTIFICATE SHOWCASE -->
+<section class="wrap cert-sec">
+  <div class="cert-content">
+    <span class="sec-badge" style="background:rgba(0,245,160,.15);color:var(--mint)">Industry Recognized Credentials</span>
+    <h2>Dual Certifications That <em>Unlock Global Opportunities</em></h2>
+    <p>Graduate with verified, blockchain-verifiable credentials co-signed by Growfies Academy and the Global Skill Federation. Fully accredited and recognized by 550+ performance marketing agencies and brands.</p>
+    
+    <ul class="cert-points">
+      <li><i>✓</i> <strong>Blockchain Verifiable:</strong> Includes unique QR code for instant recruiter credential validation.</li>
+      <li><i>✓</i> <strong>1-Click LinkedIn Integration:</strong> Add directly to your verified LinkedIn Licenses & Certifications.</li>
+      <li><i>✓</i> <strong>ISO 9001:2015 Accredited:</strong> Curriculum audited for strict international educational quality standards.</li>
+      <li><i>✓</i> <strong>Agency Portfolio Defense:</strong> Certified alongside your live ROAS proof and client capstone repo.</li>
+    </ul>
+
+    <button onclick="openModal('Verify Sample Certificate')" class="btn-primary" style="background:var(--mint);color:#04231A;box-shadow:none">
+      Inspect Sample Verified Certificate →
+    </button>
+  </div>
+
+  <!-- Realistic Certificate Graphic Mockup -->
+  <div class="cert-mockup">
+    <div class="cert-mockup-inner">
+      <div class="cert-brand">GROWFIES ACADEMY</div>
+      <div class="cert-subhead">GLOBAL INSTITUTE OF AI MARKETING & BUSINESS STRATEGY</div>
+      <div class="cert-headline">Certificate of Excellence & Professional Mastery</div>
+      <div style="font-size:12px;color:#64748B;margin-bottom:8px">THIS IS PROUDLY CONFERRED UPON</div>
+      <div class="cert-name">Aarav Patel</div>
+      <div class="cert-desc">
+        for having successfully completed the comprehensive 11-Month Postgraduate Program in AI Digital Marketing & Business Strategy, having demonstrated mastery across Real-Budget Performance Marketing, Autonomous Agent Swarms, and C-Suite P&L Defense.
+      </div>
+      <div class="cert-footer-row">
+        <div class="cert-sig">
+          <div class="cert-sig-line">Vikramaditya S.</div>
+          <div class="cert-sig-title">Head of Academic Council</div>
+        </div>
+        <div class="cert-seal">★</div>
+        <div class="cert-sig">
+          <div class="cert-sig-line">Roshan Nane</div>
+          <div class="cert-sig-title">Founder & Dean, Growfies</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALL 5 LIVE PROGRAMS CATALOG -->
+<section id="programs" class="wrap" style="padding-bottom:50px">
+  <div style="text-align:center;max-width:720px;margin:0 auto 30px">
+    <span class="sec-badge">100% Online Live Classes</span>
+    <h2 style="font-family:var(--fd);font-size:36px;font-weight:900;letter-spacing:-.025em;margin-bottom:10px">
+      Explore All 5 Live Cohorts
+    </h2>
+    <p style="color:var(--body);font-size:16px">
+      Attend interactive live cohorts from anywhere in India with real company ad budgets, 1-on-1 mentor screen sharing, 
+      and standard 0% interest No-Cost EMI financing.
+    </p>
+  </div>
+
+  <!-- Filter Tabs -->
+  <div class="tabs-wrap">
+    <button class="tab-btn active" onclick="filterCourses('all', this)">All Programs (5)</button>
+    <button class="tab-btn" onclick="filterCourses('pg', this)">Postgraduate (11 Mo)</button>
+    <button class="tab-btn" onclick="filterCourses('pro', this)">Working Professionals (6 Mo)</button>
+    <button class="tab-btn" onclick="filterCourses('ai', this)">Agentic AI & Automation (4 Mo)</button>
+    <button class="tab-btn" onclick="filterCourses('ug', this)">Undergraduate Track (3 Yr)</button>
+  </div>
+
+  <div class="course-grid">
+
+    <!-- Course 1: PG Program (11 Months) -->
+    <div class="card featured" data-cat="pg">
+      <span class="card-flag flag-pg">100% Online Live · Flagship MBA Tier</span>
+      <div class="card-header">
+        <div class="card-meta">
+          <span>🕒 11 Months</span> • <span>🎓 Fresh Grads & Early Career</span>
+        </div>
+        <h3>Postgraduate Program in AI Digital Marketing & Business Strategy</h3>
+        <p class="card-desc">
+          Our flagship masterclass program. Combines full-stack performance media buying, P&L management, brand leadership, 
+          and autonomous agent pipeline building. Includes real company ad spend and dedicated placement assurance.
+        </p>
+      </div>
+      <div class="card-tags">
+        <span class="tag live">100% Online Live Classes</span>
+        <span class="tag">Real Money Ad Spend</span>
+        <span class="tag">1:1 Mentor Breakouts</span>
+        <span class="tag">100% Placement Assurance</span>
+      </div>
+      <div class="card-tools">
+        <div class="tools-title">Key Tool Stack Mastered</div>
+        <div class="tools-pills">
+          <span class="tool-pill">Meta Ads CAPI</span>
+          <span class="tool-pill">Google PMax</span>
+          <span class="tool-pill">Claude 3.7</span>
+          <span class="tool-pill">Cursor</span>
+          <span class="tool-pill">n8n</span>
+          <span class="tool-pill">GA4</span>
+          <span class="tool-pill">Shopify Plus</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-sub">No-Cost EMI from</div>
+          <div class="price-val">₹30,301 <small>/mo</small></div>
+          <div class="price-total">Standard Total Fee: ₹5,45,000 (18 Mo EMI)</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a href="course_postgraduate_ai_marketing.html" class="btn-secondary" style="padding:10px 16px;font-size:13px;border-radius:999px;font-weight:700">View Details →</a>
+          <button onclick="openModal('Postgraduate Program in AI Digital Marketing')" class="card-cta">
+            Apply Now →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course 2: Working Professionals Track (6 Months) -->
+    <div class="card" data-cat="pro">
+      <span class="card-flag flag-pro">100% Online Live · Weekend & Evening</span>
+      <div class="card-header">
+        <div class="card-meta">
+          <span>🕒 6 Months</span> • <span>💼 Working Pros (1-4 yrs)</span>
+        </div>
+        <h3>Professional Certification in Performance Marketing & AI Strategy</h3>
+        <p class="card-desc">
+          Accelerate your media buying and agency career. Master high-scale Meta Advantage+ and Google PMax scaling, 
+          server-side GA4/CAPI tracking, and automated AI creative engines without leaving your current job.
+        </p>
+      </div>
+      <div class="card-tags">
+        <span class="tag live">100% Online Live (Evenings)</span>
+        <span class="tag">Agency Lab Budgets</span>
+        <span class="tag">Server-Side CAPI</span>
+        <span class="tag">Executive Network</span>
+      </div>
+      <div class="card-tools">
+        <div class="tools-title">Key Tool Stack Mastered</div>
+        <div class="tools-pills">
+          <span class="tool-pill">Meta Ads Manager</span>
+          <span class="tool-pill">Google Ads</span>
+          <span class="tool-pill">Midjourney v6</span>
+          <span class="tool-pill">Triple Whale</span>
+          <span class="tool-pill">Stape.io</span>
+          <span class="tool-pill">Semrush</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-sub">No-Cost EMI from</div>
+          <div class="price-val">₹19,469 <small>/mo</small></div>
+          <div class="price-total">Standard Total Fee: ₹1,60,000 (9 Mo EMI)</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a href="course_performance_marketing.html" class="btn-secondary" style="padding:10px 16px;font-size:13px;border-radius:999px;font-weight:700">View Details →</a>
+          <button onclick="openModal('Professional Certification in Performance Marketing')" class="card-cta">
+            Apply Now →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course 3: Advanced AI & Automation Specialization (4 Months) -->
+    <div class="card" data-cat="ai">
+      <span class="card-flag flag-ai">100% Online Live · AI Specialist</span>
+      <div class="card-header">
+        <div class="card-meta">
+          <span>🕒 4 Months</span> • <span>🤖 Growth Hackers & Modern Leaders</span>
+        </div>
+        <h3>Advanced Certification in Agentic AI, Automation & Vibe Coding</h3>
+        <p class="card-desc">
+          Learn what standard courses can't teach: Building autonomous AI agent swarms, webhook pipelines, vibe coding web apps 
+          with Claude and Cursor, and orchestrating full marketing departments with zero headcount.
+        </p>
+      </div>
+      <div class="card-tags">
+        <span class="tag live">100% Online Live Classes</span>
+        <span class="tag">25+ AI Tools</span>
+        <span class="tag">2,720+ Growfies Agents</span>
+        <span class="tag">Production Workflows</span>
+      </div>
+      <div class="card-tools">
+        <div class="tools-title">Key Tool Stack Mastered</div>
+        <div class="tools-pills">
+          <span class="tool-pill">Claude Code</span>
+          <span class="tool-pill">Cursor</span>
+          <span class="tool-pill">Make.com</span>
+          <span class="tool-pill">n8n</span>
+          <span class="tool-pill">Google AI Studio</span>
+          <span class="tool-pill">HeyGen</span>
+          <span class="tool-pill">Lovable</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-sub">No-Cost EMI from</div>
+          <div class="price-val">₹15,575 <small>/mo</small></div>
+          <div class="price-total">Standard Total Fee: ₹1,15,000 (8 Mo EMI)</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a href="course_agentic_ai.html" class="btn-secondary" style="padding:10px 16px;font-size:13px;border-radius:999px;font-weight:700">View Details →</a>
+          <button onclick="openModal('Advanced Certification in Agentic AI')" class="card-cta">
+            Apply Now →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course 4: Undergraduate Track (3 Years) -->
+    <div class="card" data-cat="ug">
+      <span class="card-flag flag-ug">100% Online Live + Degree Track</span>
+      <div class="card-header">
+        <div class="card-meta">
+          <span>🕒 3 Years</span> • <span>🚀 Future Founders & 12th Passouts</span>
+        </div>
+        <h3>Undergraduate Degree in Digital Business & AI Entrepreneurship</h3>
+        <p class="card-desc">
+          Forget generic B.Com/BBA degrees memorizing outdated textbooks. Graduate with a recognized university degree 
+          plus a live, cash-flowing e-commerce or digital agency business incubated online with live mentor defense.
+        </p>
+      </div>
+      <div class="card-tags">
+        <span class="tag live">100% Online Live Lectures</span>
+        <span class="tag">Incubator Seed Grant</span>
+        <span class="tag">Live Brand Launch</span>
+        <span class="tag">Recognized University Track</span>
+      </div>
+      <div class="card-tools">
+        <div class="tools-title">Key Tool Stack Mastered</div>
+        <div class="tools-pills">
+          <span class="tool-pill">Full Marketing Stack</span>
+          <span class="tool-pill">QuickBooks</span>
+          <span class="tool-pill">Shopify Plus</span>
+          <span class="tool-pill">Stripe</span>
+          <span class="tool-pill">Figma</span>
+          <span class="tool-pill">Agent Systems</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-sub">Semester Fee from</div>
+          <div class="price-val">₹86,000 <small>/sem</small></div>
+          <div class="price-total">Standard EMI: ₹18,500/mo (Total: ₹5,20,000)</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a href="course_undergraduate_business.html" class="btn-secondary" style="padding:10px 16px;font-size:13px;border-radius:999px;font-weight:700">View Details →</a>
+          <button onclick="openModal('UG Degree in Digital Business & Entrepreneurship')" class="card-cta">
+            Apply Now →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course 5: Short-Term Fast Track (6 Weeks) -->
+    <div class="card" data-cat="pro">
+      <span class="card-flag flag-pro">100% Online Live · Specialist Sprint</span>
+      <div class="card-header">
+        <div class="card-meta">
+          <span>🕒 6 Weeks</span> • <span>⚡ Instant Skill Upgrade</span>
+        </div>
+        <h3>Executive Sprint: Paid Ads, Programmatic SEO & WhatsApp Funnels</h3>
+        <p class="card-desc">
+          Intensive modular live sprint for operators needing immediate ROI on specific channels. Choose your focus: 
+          Meta & Google Ads Scaling, 100k Programmatic SEO, or sub-60s WhatsApp CRM automation.
+        </p>
+      </div>
+      <div class="card-tags">
+        <span class="tag live">100% Online Live Masterclasses</span>
+        <span class="tag">Live Q&A Clinics</span>
+        <span class="tag">Verified Certification</span>
+        <span class="tag">Deployable Templates</span>
+      </div>
+      <div class="card-tools">
+        <div class="tools-title">Key Tool Stack Mastered</div>
+        <div class="tools-pills">
+          <span class="tool-pill">Meta Ads Manager</span>
+          <span class="tool-pill">Google Ads</span>
+          <span class="tool-pill">WhatsApp Cloud API</span>
+          <span class="tool-pill">Semrush</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-sub">Standard Program Fee</div>
+          <div class="price-val">₹35,000 <small>one-time</small></div>
+          <div class="price-total">EMI available from ₹8,750/mo (4 installments)</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a href="course_executive_sprint.html" class="btn-secondary" style="padding:10px 16px;font-size:13px;border-radius:999px;font-weight:700">View Details →</a>
+          <button onclick="openModal('Executive Sprint Bootcamp')" class="card-cta">
+            Enroll Today →
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HEAD-TO-HEAD COMPARISON VS IIDE -->
+<section id="comparison" class="wrap">
+  <div class="comp-sec">
+    <div class="comp-head">
+      <span class="sec-badge">Objective Benchmarking</span>
+      <h2>Why Growfies Academy Outperforms Legacy Institutes</h2>
+      <p>
+        Compare our modern, AI-first curriculum against traditional institutes like IIDE, MCTA, and Digital Vidya. 
+        At the exact same standard market fees, you receive 10x the execution capability.
+      </p>
+    </div>
+    <div class="comp-table-wrap">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Curriculum & Execution Dimension</th>
+            <th class="col-mi">Growfies Academy (100% Live Online & AI-Native)</th>
+            <th>Traditional Institutes (IIDE, MCTA)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Learning Format & Delivery</strong></td>
+            <td class="col-mi"><i class="chk">✓</i> 100% Online Live Interactive Classes with 1-on-1 screen shares & live doubt clearance</td>
+            <td><i class="cross">✕</i> Mandatory physical commutes or non-interactive pre-recorded videos</td>
+          </tr>
+          <tr>
+            <td><strong>Live Real-Money Ad Spend</strong></td>
+            <td class="col-mi"><i class="chk">✓</i> Real company ad budgets provided to every student</td>
+            <td><i class="cross">✕</i> Strictly dummy accounts & hypothetical presentations</td>
+          </tr>
+          <tr>
+            <td><strong>Agentic AI & Autonomous Pipelines</strong></td>
+            <td class="col-mi"><i class="chk">✓</i> Deep training on Make.com, n8n, Claude 3.7, Cursor & 2,720+ Growfies agents</td>
+            <td><i class="cross">✕</i> Superficial ChatGPT prompting and image prompts only</td>
+          </tr>
+          <tr>
+            <td><strong>Software & Infrastructure Access</strong></td>
+            <td class="col-mi"><i class="chk">✓</i> 1-Year Free Pro Access to Growfies.com AI marketing suite (2,720+ agents)</td>
+            <td><i class="cross">✕</i> None; students must purchase their own tool subscriptions</td>
+          </tr>
+          <tr>
+            <td><strong>Curriculum Freshness</strong></td>
+            <td class="col-mi"><i class="chk">✓</i> Updated monthly by active agency founders and media buyers</td>
+            <td><i class="cross">✕</i> Updated once every 1–2 years; heavy on legacy theory</td>
+          </tr>
+          <tr>
+            <td><strong>Placement Velocity & Transparency</strong></td>
+            <td class="col-mi"><i class="chk">✓</i> Direct agency placements with live portfolio audits (Avg: ₹7.2 LPA, Max: ₹21 LPA)</td>
+            <td><i class="cross">✕</i> Generic job portals & bulk resume forwarding</td>
+          </tr>
+          <tr>
+            <td><strong>Pricing & Value Delivery</strong></td>
+            <td class="col-mi"><i class="chk">✓</i> Standard market pricing (₹15,575–₹30,301/mo EMI) with Real Ad Spend & 2,720+ AI Tools Included</td>
+            <td><i class="cross">✕</i> Same ₹30,301/mo fee with ZERO live ad budget and commute friction</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE AGENCY LAB SECTION -->
+<section id="live-lab" class="wrap">
+  <div class="lab-sec">
+    <div class="lab-content">
+      <span class="sec-badge" style="background:rgba(0,245,160,.15);color:var(--mint)">Cloud-Based Agency Lab</span>
+      <h2>The <em>Live Agency Lab</em>: 100% Online, Real Capital, Zero Commute.</h2>
+      <p>
+        The biggest flaw in Indian digital marketing education is theory without skin in the game. 
+        In our Live Online Agency Lab, you are handed actual client briefs, live ad account access, and real marketing capital 
+        collaborating in real-time with your cohort online.
+      </p>
+      <div class="lab-steps">
+        <div class="lab-step">
+          <div class="step-num">1</div>
+          <div class="step-txt">
+            <h4>Live Capital Deployment</h4>
+            <p>Deploy real ad budgets on Meta and Google Ads, analyze real CPC/ROAS metrics in real-time under mentor supervision.</p>
+          </div>
+        </div>
+        <div class="lab-step">
+          <div class="step-num">2</div>
+          <div class="step-txt">
+            <h4>Autonomous Agent Swarms</h4>
+            <p>Set up automated lead triage workflows that capture incoming leads and reply via WhatsApp in &lt;60s using Claude & n8n.</p>
+          </div>
+        </div>
+        <div class="lab-step">
+          <div class="step-num">3</div>
+          <div class="step-txt">
+            <h4>Client Pitch Defense</h4>
+            <p>Present live campaign analytics directly to startup founders and agency CMOs over interactive video defenses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:34px;text-align:center">
+      <div style="font-family:var(--fm);font-size:12px;color:var(--mint);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">Student Capstone Proof</div>
+      <h3 style="font-family:var(--fd);font-size:26px;color:#fff;margin-bottom:14px">₹14.2 Lakhs Generated in 30 Days</h3>
+      <p style="font-size:14px;color:#94A3B8;line-height:1.5;margin-bottom:24px">
+        By our Q3 Postgraduate cohort during their live D2C festival campaign sprint for a national jewellery brand.
+      </p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">
+        <div style="background:rgba(0,0,0,.3);padding:14px;border-radius:10px">
+          <div style="font-size:20px;font-weight:900;color:var(--mint)">4.8x</div>
+          <div style="font-size:11px;color:#94A3B8">Blended ROAS</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);padding:14px;border-radius:10px">
+          <div style="font-size:20px;font-weight:900;color:#38BDF8">840+</div>
+          <div style="font-size:11px;color:#94A3B8">WhatsApp Conversions</div>
+        </div>
+      </div>
+      <button onclick="openModal('Request Live Lab Case Study')" style="width:100%;padding:14px;border-radius:999px;background:var(--mint);color:#04231A;font-weight:800;border:none;cursor:pointer">
+        Inspect Student Project Portfolios →
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq" class="wrap faq-sec">
+  <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 12px">Transparent Admissions</span>
+  <h2>Frequently Asked Questions</h2>
+  
+  <div class="faq-item open">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      <span>Are all classes 100% Online and Live?</span>
+      <span class="caret">▼</span>
+    </div>
+    <div class="faq-a">
+      <strong>Yes, 100%.</strong> Every session is delivered live and interactively online by senior agency practitioners. You get two-way audio/video, real-time screen sharing, interactive coding/campaign walkthroughs, and instant doubt clarification. If you miss a live session, full HD recordings and step-by-step notes are archived within 2 hours for lifetime access.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      <span>What makes Growfies Academy different from IIDE?</span>
+      <span class="caret">▼</span>
+    </div>
+    <div class="faq-a">
+      While traditional institutes like IIDE charge high fees for outdated digital marketing theory and superficial ChatGPT prompts, Growfies Academy operates at standard market rates while delivering <strong>10x the execution value</strong>: 100% online live interactive classes, real company ad budgets to spend on Meta & Google Ads, and full training on building autonomous agent workflows (Make, n8n, Claude 3.7, Cursor) with free access to Growfies' 2,720+ proprietary marketing agents.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      <span>What is the fee structure and No-Cost EMI options?</span>
+      <span class="caret">▼</span>
+    </div>
+    <div class="faq-a">
+      We adopt standard industry pricing with 0% interest No-Cost EMI options across all leading banking partners (HDFC, ICICI, Axis, Kotak, Bajaj Finserv). Our 11-Month PG Program is ₹30,301/mo EMI (Total: ₹5,45,000), 6-Month Professional Certification is ₹19,469/mo EMI (Total: ₹1,60,000), and 4-Month Agentic AI Certification is ₹15,575/mo EMI (Total: ₹1,15,000).
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      <span>How does the real money ad spend work in an online format?</span>
+      <span class="caret">▼</span>
+    </div>
+    <div class="faq-a">
+      You are assigned to an online growth pod during the Live Agency Lab. We provision dedicated, pre-funded ad accounts with real company marketing capital. Under live mentor supervision, your pod designs creatives, builds landing pages, configures server-side GA4 tracking, and manages live bids on Meta Ads Manager and Google Ads.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      <span>Is placement assistance guaranteed for online students?</span>
+      <span class="caret">▼</span>
+    </div>
+    <div class="faq-a">
+      Yes. Online learners receive the exact same 100% dedicated placement assurance as any premier institute. Our placement council conducts 1-on-1 resume optimization, mock agency pitches, LinkedIn brand audits, and arranges direct interviews with our network of 550+ performance marketing agencies and tech brands.
+    </div>
+  </div>
+</section>
+
+<!-- LEAD CAPTURE MODAL -->
+<div id="leadModal" class="modal-overlay">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-head">
+      <h3 id="modalTitle">Book Free 1:1 Live Counseling</h3>
+      <p>Connect with a senior academic advisor via WhatsApp or Google Meet within 2 business hours.</p>
+    </div>
+    <form id="leadForm" onsubmit="submitLead(event)">
+      <div class="form-group">
+        <label>Your Full Name *</label>
+        <input type="text" id="formName" required placeholder="e.g. Rohan Sharma" />
+      </div>
+      <div class="form-group">
+        <label>Email Address *</label>
+        <input type="email" id="formEmail" required placeholder="e.g. rohan@gmail.com" />
+      </div>
+      <div class="form-group">
+        <label>WhatsApp Phone Number *</label>
+        <input type="tel" id="formPhone" required placeholder="e.g. +91 98765 43210" />
+      </div>
+      <div class="form-group">
+        <label>Program of Interest</label>
+        <select id="formProgram">
+          <option value="Postgraduate Program in AI Digital Marketing (11 Mo)">Postgraduate Program in AI Digital Marketing (11 Mo)</option>
+          <option value="Professional Certification in Performance Marketing (6 Mo)">Professional Certification in Performance Marketing (6 Mo)</option>
+          <option value="Advanced Certification in Agentic AI & Vibe Coding (4 Mo)">Advanced Certification in Agentic AI & Vibe Coding (4 Mo)</option>
+          <option value="Undergraduate Degree in Digital Business (3 Years)">Undergraduate Degree in Digital Business (3 Years)</option>
+          <option value="Executive Sprint: Paid Ads, SEO & WhatsApp (6 Wks)">Executive Sprint: Paid Ads, SEO & WhatsApp (6 Wks)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Your Current Background</label>
+        <select id="formStatus">
+          <option value="College Student / Fresh Graduate">College Student / Fresh Graduate</option>
+          <option value="Working Professional (1-3 yrs experience)">Working Professional (1-3 yrs experience)</option>
+          <option value="Working Professional (4+ yrs experience)">Working Professional (4+ yrs experience)</option>
+          <option value="Business Owner / Founder / Freelancer">Business Owner / Founder / Freelancer</option>
+        </select>
+      </div>
+      <button type="submit" class="modal-submit">Confirm & Book Free Live Session →</button>
+    </form>
+    <div id="formSuccess" style="display:none;text-align:center;padding:20px 0">
+      <div style="font-size:42px;margin-bottom:10px">🎉</div>
+      <h4 style="font-family:var(--fd);font-size:22px;font-weight:800;color:var(--jade);margin-bottom:8px">Inquiry Confirmed!</h4>
+      <p style="font-size:14px;color:var(--body)">An admissions counselor will connect via WhatsApp within 2 business hours with your 1:1 counseling link and academic brochure.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Growfies<em>Academy</em></h4>
+        <p style="line-height:1.6;margin-bottom:18px">
+          India's premier 100% Online Live business school for AI-native marketing, real-budget media buying, 
+          and autonomous growth engineering. Powered by Growfies.com.
+        </p>
+        <div style="font-size:12.5px;color:#64748B">Admissions Helpline: +91 96199 58615 · admissions@growfies.com</div>
+      </div>
+      <div class="footer-col">
+        <h5>Programs</h5>
+        <ul>
+          <li><a href="course_postgraduate_ai_marketing.html">PG in AI Marketing (11 Mo)</a></li>
+          <li><a href="course_performance_marketing.html">Performance Marketing (6 Mo)</a></li>
+          <li><a href="course_agentic_ai.html">Agentic AI Specialization (4 Mo)</a></li>
+          <li><a href="course_undergraduate_business.html">UG Degree in Digital Business</a></li>
+          <li><a href="course_executive_sprint.html">Executive Sprint (6 Wks)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Why Growfies</h5>
+        <ul>
+          <li><a href="#live-experience">Live Virtual Studio</a></li>
+          <li><a href="#outcomes">Alumni Salary Hikes</a></li>
+          <li><a href="#faculty">Lead Mentors & Faculty</a></li>
+          <li><a href="#tools">Tool Stack Ecosystem</a></li>
+          <li><a href="#comparison">Compare vs IIDE</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Accreditation</h5>
+        <p style="font-size:13px;line-height:1.5;margin-bottom:12px">
+          Dual certifications accredited by Global Skill Federation & ISO 9001:2015 quality council.
+        </p>
+        <div style="font-family:var(--fm);font-size:11px;color:var(--mint)">● 550+ Agency Hiring Partners</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Growfies Academy (growfies.com) · All Rights Reserved · 100% Online Live Classes</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function filterCourses(cat, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+function toggleFaq(header) {
+  const item = header.parentElement;
+  item.classList.toggle('open');
+}
+
+function openModal(title) {
+  if (title) document.getElementById('modalTitle').innerText = title;
+  document.getElementById('leadModal').classList.add('open');
+  document.getElementById('leadForm').style.display = 'block';
+  document.getElementById('formSuccess').style.display = 'none';
+}
+
+function closeModal() {
+  document.getElementById('leadModal').classList.remove('open');
+}
+
+async function submitLead(e) {
+  e.preventDefault();
+  const payload = {
+    name: document.getElementById('formName').value,
+    email: document.getElementById('formEmail').value,
+    phone: document.getElementById('formPhone').value,
+    program: document.getElementById('formProgram').value,
+    status: document.getElementById('formStatus').value,
+    source: 'growfies_academy_online',
+    timestamp: new Date().toISOString()
+  };
+
+  try {
+    await fetch('/api/leads/course-inquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+  } catch (err) {
+    console.log('Lead queued locally:', payload);
+  }
+
+  document.getElementById('leadForm').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+  setTimeout(() => { closeModal(); }, 4000);
+}
+</script>
+</body>
+</html>
