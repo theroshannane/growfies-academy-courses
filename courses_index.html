@@ -886,6 +886,52 @@ footer { background: #0A0D12; color: #94A3B8; padding: 60px 0 30px; font-size: 1
 .footer-col a:hover { color: #fff; }
 .footer-bottom { border-top: 1px solid #1E293B; padding-top: 24px; text-align: center; font-size: 12px; color: #64748B; }
 
+/* 12 Salient Pillars */
+.pillars-sec { padding: 40px 0 60px; }
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 32px;
+}
+.pillar-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-s);
+  padding: 22px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.02);
+  transition: transform .2s var(--e), border-color .2s;
+  position: relative;
+}
+.pillar-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--jade);
+  box-shadow: 0 10px 26px rgba(0,135,90,0.08);
+}
+.pillar-num {
+  font-family: var(--fm);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--jade);
+  background: var(--jade-50);
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.pillar-card h4 {
+  font-family: var(--fd);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.pillar-card p {
+  font-size: 13px;
+  color: var(--body);
+  line-height: 1.5;
+}
+
 @media (max-width: 960px) {
   .founder-grid { grid-template-columns: 1fr; }
   .stats-bar { grid-template-columns: repeat(2, 1fr); }
@@ -894,11 +940,13 @@ footer { background: #0A0D12; color: #94A3B8; padding: 60px 0 30px; font-size: 1
   .lab-sec { grid-template-columns: 1fr; }
   .bonus-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .pillars-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .stats-bar { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
+  .pillars-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -1764,6 +1812,80 @@ footer { background: #0A0D12; color: #94A3B8; padding: 60px 0 30px; font-size: 1
           <div class="cert-sig-title">Founder, MarketInc & Growfies</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 SALIENT PILLARS (MARKETINC INSTITUTIONAL ARCHITECTURE) -->
+<section class="wrap pillars-sec" id="pillars">
+  <div style="text-align:center;max-width:760px;margin:0 auto">
+    <span class="sec-badge">Built by MarketInc</span>
+    <h2 class="sec-heading">12 Salient Pillars of Our Academy</h2>
+    <p class="sec-sub">
+      Every element engineered to bridge the gap between academic theory and real-world high-paying performance leadership.
+    </p>
+  </div>
+
+  <div class="pillars-grid">
+    <div class="pillar-card">
+      <div class="pillar-num">01</div>
+      <h4>Digital Skills with AI</h4>
+      <p>Master AI-native marketing workflows, prompt engineering, and automated campaign ops from day one.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">02</div>
+      <h4>65+ Global Certifications</h4>
+      <p>Dual credentials co-certified with JAINx, AICPE, plus Google, Meta, HubSpot & SEMrush mapped badges.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">03</div>
+      <h4>1:1 Career Mentoring</h4>
+      <p>Personalized 1-on-1 counseling and sprint reviews from active agency CMOs and growth directors.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">04</div>
+      <h4>Free Lifetime Guidance</h4>
+      <p>Lifetime access to our 20,000+ alumni network, private job referral board, and quarterly AI updates.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">05</div>
+      <h4>University Curriculum</h4>
+      <p>Academically rigorous 18-credit framework recognized by Jain University (NAAC 'A++') and AICPE.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">06</div>
+      <h4>Resume & ATS Polish</h4>
+      <p>Craft recruiter-grade, ATS-optimized resumes and live web portfolios that guarantee hiring callbacks.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">07</div>
+      <h4>Mock Interview Clinics</h4>
+      <p>Realistic simulated interview rounds with live feedback from hiring partners before going on real calls.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">08</div>
+      <h4>100% Placement Support</h4>
+      <p>Dedicated career services cell arranging direct guaranteed interviews across our 500+ corporate tie-ups.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">09</div>
+      <h4>MBA-Level Program Rigor</h4>
+      <p>Strategic P&L thinking, Marketing Mix Modeling, CAC/LTV forecasting, and unit economics masterclasses.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">10</div>
+      <h4>100% Live Practical Training</h4>
+      <p>Real company ad budgets to spend in live labs. Experience real ROAS pressure instead of theoretical slides.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">11</div>
+      <h4>50+ AI Modules & 25+ Tools</h4>
+      <p>Hands-on mastery of Claude, Midjourney, n8n, Make.com, HubSpot AI, and Looker Studio attribution.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">12</div>
+      <h4>500+ Hiring Tie-Ups</h4>
+      <p>Direct hiring pipelines with Amazon, Accenture, Tata Digital, Schbang, Kinnect, Dentsu & Purplle.</p>
     </div>
   </div>
 </section>

@@ -226,22 +226,91 @@ footer a:hover{color:#fff}
 .faculty-ex{display:inline-block;font-size:11px;font-family:var(--fm);background:#EEF2F6;color:#334155;padding:3px 8px;border-radius:6px;font-weight:700;margin-bottom:14px}
 .faculty-topic{font-size:13px;color:var(--body);line-height:1.5}
 
-.alumni-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:36px}
-.alumni-card{background:#fff;border-radius:20px;border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 8px 24px rgba(16,19,23,.04);transition:.2s var(--e)}
-.alumni-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(16,19,23,.08);border-color:var(--jade)}
-.alumni-head{display:flex;gap:16px;align-items:center;margin-bottom:20px}
-.alumni-pic{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--jade-50);flex-shrink:0}
-.alumni-meta h4{font-size:17px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:6px}
-.alumni-meta .linkedin-tag{color:#0A66C2;font-size:14px;font-weight:800}
-.alumni-meta .prog-tag{font-size:12px;color:var(--muted);font-weight:600}
-.alumni-transition{background:#F8FAFC;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:18px}
-.trans-row{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;margin-bottom:6px}
-.trans-lbl{color:var(--muted);font-weight:600}
-.trans-val{font-weight:800;color:var(--ink)}
-.trans-hike{background:rgba(16,185,129,.12);color:#047857;font-size:12px;font-weight:800;padding:4px 10px;border-radius:6px;text-align:center;font-family:var(--fm);margin-top:6px}
-.alumni-quote{font-size:13.5px;color:var(--body);line-height:1.6;font-style:italic;margin-bottom:20px;flex:1}
-.alumni-capstone-link{font-size:12.5px;font-weight:800;color:var(--jade);display:inline-flex;align-items:center;gap:4px}
-.alumni-capstone-link:hover{text-decoration:underline}
+.alumni-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:36px}
+.alumni-card{background:#fff;border-radius:18px;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;box-shadow:0 6px 20px rgba(0,0,0,.03);transition:.2s var(--e)}
+.alumni-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,135,90,.08);border-color:var(--jade)}
+.alumni-top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.alumni-top img{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid var(--jade)}
+.alumni-name{font-weight:800;font-size:15px;color:var(--ink)}
+.alumni-role{font-size:12px;color:var(--jade);font-weight:700}
+.alumni-prev{font-size:11px;color:var(--muted)}
+.alumni-quote{font-size:13.5px;color:var(--body);line-height:1.6;font-style:italic;margin-bottom:16px;flex:1}
+
+/* Founder Spotlight */
+.founder-card-sec {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 44px 40px;
+  margin: 50px 0;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.03);
+}
+.founder-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.founder-pic-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  border: 4px solid #fff;
+}
+.founder-pic-wrap img {
+  width: 100%;
+  max-height: 480px;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* 12 Salient Pillars */
+.pillars-sec { padding: 40px 0 60px; }
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 32px;
+}
+.pillar-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-s);
+  padding: 22px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.02);
+  transition: transform .2s var(--e), border-color .2s;
+  position: relative;
+}
+.pillar-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--jade);
+  box-shadow: 0 10px 26px rgba(0,135,90,0.08);
+}
+.pillar-num {
+  font-family: var(--fm);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--jade);
+  background: var(--jade-50);
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.pillar-card h4 {
+  font-family: var(--fd);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.pillar-card p {
+  font-size: 13px;
+  color: var(--body);
+  line-height: 1.5;
+}
 
 .cert-sec{background:linear-gradient(135deg,#101622 0%,#0A0D12 100%);color:#fff;border-radius:24px;padding:60px 50px;margin:70px 0;display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
 .cert-content h2{font-size:34px;font-weight:900;margin-bottom:14px}
@@ -262,8 +331,16 @@ footer a:hover{color:#fff}
 .cert-sig-line{font-family:'Brush Script MT',cursive,sans-serif;font-size:20px;color:#1E293B}
 .cert-sig-title{font-family:var(--fd);font-size:9px;font-weight:800;color:#64748B;text-transform:uppercase}
 .cert-seal{width:50px;height:50px;border-radius:50%;background:#C5A059;color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 10px rgba(197,160,89,.4)}
-@media(max-width:960px){.cert-sec{grid-template-columns:1fr}}
-
+@media(max-width:960px){
+  .cert-sec{grid-template-columns:1fr}
+  .founder-grid{grid-template-columns:1fr}
+  .alumni-grid{grid-template-columns:repeat(2,1fr)}
+  .pillars-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .alumni-grid{grid-template-columns:1fr}
+  .pillars-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -615,46 +692,65 @@ footer a:hover{color:#fff}
 <!-- Alumni Outcomes -->
 <section class="wrap sec" id="alumni">
   <div class="sec-title">
-    <span class="sec-badge">Automation Career Proof</span>
-    <h2>Agentic AI Career Transformations</h2>
-    <p>Read how non-engineers mastered autonomous workflows and landed lead automation roles.</p>
+    <span class="sec-badge">Verified Career Outcomes</span>
+    <h2>Agentic AI Alumni Transitions</h2>
+    <p>Read how real professionals transformed their careers through our rigorous hands-on agency training.</p>
   </div>
   <div class="alumni-grid">
     <div class="alumni-card">
-      <div>
-        <div class="alumni-head">
-          <img class="alumni-pic" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80" alt="Rohan Deshmukh" />
-          <div class="alumni-meta">
-            <h4>Rohan Deshmukh <span class="linkedin-tag">in</span></h4>
-            <div class="prog-tag">Agentic AI Specialization '25</div>
-          </div>
+      <div class="alumni-top">
+        <img src="/courses/assets/student-kanishka.png" alt="Kanishka Chauhan" />
+        <div>
+          <div class="alumni-name">Kanishka Chauhan</div>
+          <div class="alumni-role">Media Lead @ Schbang</div>
+          <div class="alumni-prev">Ex-Marketing Executive</div>
         </div>
-        <div class="alumni-transition">
-          <div class="trans-row"><span class="trans-lbl">Before:</span><span class="trans-val">BBA Graduate, Unplaced (₹0)</span></div>
-          <div class="trans-row"><span class="trans-lbl">Now:</span><span class="trans-val" style="color:var(--jade)">AI Automation Lead, Schbang</span></div>
-          <div class="trans-hike">Salary: ₹8.4 LPA (Direct Placement)</div>
-        </div>
-        <p class="alumni-quote">"I had zero coding background. In 4 months, I built production webhooks connecting n8n, Make, and Claude Code that automate 90% of agency lead reporting. Schbang hired me on the spot."</p>
       </div>
-      <div><a href="javascript:void(0)" onclick="openModal('View Rohan Pipeline')" class="alumni-capstone-link">Inspect Multi-Agent Swarm Repo →</a></div>
+      <p class="alumni-quote">
+        "MarketInc is India's top Digital Education institute giving the best Online, Live & PG Courses in Digital Marketing. Don't miss this opportunity and enroll now! Looking forward to seeing you there. Get ready to go to the future level!"
+      </p>
     </div>
+
     <div class="alumni-card">
-      <div>
-        <div class="alumni-head">
-          <img class="alumni-pic" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Kunal Varma" />
-          <div class="alumni-meta">
-            <h4>Kunal Varma <span class="linkedin-tag">in</span></h4>
-            <div class="prog-tag">AI Growth Engineering</div>
-          </div>
+      <div class="alumni-top">
+        <img src="/courses/assets/student-rakhee.jpeg" alt="Rakhee Patil" />
+        <div>
+          <div class="alumni-name">Rakhee Patil</div>
+          <div class="alumni-role">Senior Specialist, Tata Digital</div>
+          <div class="alumni-prev">Digital Marketing Professional</div>
         </div>
-        <div class="alumni-transition">
-          <div class="trans-row"><span class="trans-lbl">Before:</span><span class="trans-val">SEO Executive (₹3.8 LPA)</span></div>
-          <div class="trans-row"><span class="trans-lbl">Now:</span><span class="trans-val" style="color:var(--jade)">Growth Automation Lead, Blinkit</span></div>
-          <div class="trans-hike">Salary: ₹12.0 LPA (+215% Hike)</div>
-        </div>
-        <p class="alumni-quote">"The 1-year free Pro access to Growfies' 2,720+ agents allowed me to experiment at massive scale. I vibe-coded an automated competitor pricing radar in Cursor during my final capstone."</p>
       </div>
-      <div><a href="javascript:void(0)" onclick="openModal('View Kunal Project')" class="alumni-capstone-link">Inspect Blinkit Automation Blueprint →</a></div>
+      <p class="alumni-quote">
+        "MarketInc is one of the best digital marketing courses in Thane, Mumbai. I really learned a lot from them and the way they teach and discuss things with us, I surely can say that it's unmatched. I wish everyone joins here who wants to make a career in digital marketing."
+      </p>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-top">
+        <img src="/courses/assets/student-swati.jpeg" alt="Swati Udupa" />
+        <div>
+          <div class="alumni-name">Swati Udupa</div>
+          <div class="alumni-role">Growth Strategist, Dentsu</div>
+          <div class="alumni-prev">Digital Growth Track</div>
+        </div>
+      </div>
+      <p class="alumni-quote">
+        "Very thoroughly planned courses on Digital Marketing with the use of latest technological tools to keep you up-to-date with today's world. With more than 10 years of experience in the field of Digital Marketing, MarketInc has helped numerous people achieve their goals."
+      </p>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-top">
+        <img src="/courses/assets/student-mavia.png" alt="Mavia Fernandes" />
+        <div>
+          <div class="alumni-name">Mavia Fernandes</div>
+          <div class="alumni-role">Digital Associate, Media.net</div>
+          <div class="alumni-prev">AI & Automation Specialist</div>
+        </div>
+      </div>
+      <p class="alumni-quote">
+        "MarketInc - The Pinnacle of Excellence and Quality! Introducing a cutting-edge marketing automation programme built in collaboration with industry and academics that will provide you with all of the abilities you require. Get ready for a digitalised future!"
+      </p>
     </div>
   </div>
 </section>
@@ -678,13 +774,125 @@ footer a:hover{color:#fff}
       <div class="cert-subhead">CENTER FOR ADVANCED AI ENGINEERING</div>
       <div class="cert-headline">Advanced Certification in Agentic AI & Vibe Coding</div>
       <div style="font-size:12px;color:#64748B;margin-bottom:8px">CONFERRED UPON</div>
-      <div class="cert-name">Rohan Deshmukh</div>
+      <div class="cert-name">Mavia Fernandes</div>
       <div class="cert-desc">having demonstrated mastery in Multi-Agent Swarm Architectures, Webhook Orchestration (n8n/Make), Claude 3.7 Reasoning Loops, and Cursor IDE Full-Stack Vibe Coding.</div>
       <div class="cert-footer-row">
         <div class="cert-sig"><div class="cert-sig-line">Arjun Mehta</div><div class="cert-sig-title">AI Faculty Lead</div></div>
         <div class="cert-seal">★</div>
-        <div class="cert-sig"><div class="cert-sig-line">Roshan Nane</div><div class="cert-sig-title">Dean, Growfies</div></div>
+        <div class="cert-sig"><div class="cert-sig-line">Roshan Nane</div><div class="cert-sig-title">Founder & Dean, Growfies</div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER & PROGRAM DIRECTOR SPOTLIGHT -->
+<section class="wrap sec" id="leadership">
+  <div class="founder-card-sec">
+    <div class="founder-grid">
+      <div class="founder-pic-wrap">
+        <img src="/courses/assets/roshan-nane-founder.png" alt="Roshan Nane Founder MarketInc & Growfies Academy" />
+      </div>
+
+      <div>
+        <span class="sec-badge">Program Director & Agency Veteran</span>
+        <h2 style="font-family:var(--fd);font-size:32px;font-weight:900;color:var(--ink);margin-bottom:6px">
+          Led by Roshan Nane
+        </h2>
+        <div style="font-size:14px;font-weight:700;color:var(--jade);margin-bottom:14px;font-family:var(--fm)">
+          Founder @ MarketInc & Growfies Academy · Recipient, Indian Achievers' Forum Award
+        </div>
+        
+        <p style="font-size:15px;color:var(--body);line-height:1.65;margin-bottom:16px">
+          "Most digital marketing courses in India are taught by professors who haven't launched an ad campaign in 5 years. At Growfies Academy powered by MarketInc, we flipped the model completely. Every student receives live ad spend budgets, hands-on access to enterprise MarTech stacks, and builds automated AI workflows from day one."
+        </p>
+
+        <p style="font-size:14.5px;color:var(--body);line-height:1.6;margin-bottom:20px">
+          With <strong>11+ years of hands-on agency leadership</strong>, managing <strong>₹12Cr+ in digital ad spends</strong> and training <strong>20,000+ students & professionals</strong>, Roshan personally architects the AI curriculum in collaboration with Jain University's JAINx and AICPE.
+        </p>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap">
+          <button onclick="openModal('Book 1-on-1 AI Mentorship')" class="btn-primary" style="padding:12px 24px;font-size:14px">
+            Book 1-on-1 Profile Assessment →
+          </button>
+          <a href="https://wa.me/917400351422?text=Hi%20Roshan%2C%20I%20have%20questions%20about%20the%20Agentic%20AI%20Program" target="_blank" class="btn-whatsapp" style="padding:12px 22px;font-size:14px;background:#25D366;color:#fff;border-radius:10px;text-decoration:none;font-weight:700;display:inline-flex;align-items:center">
+            💬 WhatsApp Mentor Helpline
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 SALIENT PILLARS (MARKETINC INSTITUTIONAL ARCHITECTURE) -->
+<section class="wrap pillars-sec" id="pillars">
+  <div style="text-align:center;max-width:760px;margin:0 auto">
+    <span class="sec-badge">Built by MarketInc</span>
+    <h2 class="sec-heading" style="font-family:var(--fd);font-size:32px;font-weight:900;color:var(--ink);margin-bottom:8px">12 Salient Pillars of Our Academy</h2>
+    <p class="sec-sub" style="font-size:15px;color:var(--body);line-height:1.6">
+      Every element engineered to bridge the gap between academic theory and real-world high-paying performance leadership.
+    </p>
+  </div>
+
+  <div class="pillars-grid">
+    <div class="pillar-card">
+      <div class="pillar-num">01</div>
+      <h4>Digital Skills with AI</h4>
+      <p>Master AI-native marketing workflows, prompt engineering, and automated campaign ops from day one.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">02</div>
+      <h4>65+ Global Certifications</h4>
+      <p>Dual credentials co-certified with JAINx, AICPE, plus Google, Meta, HubSpot & SEMrush mapped badges.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">03</div>
+      <h4>1:1 Career Mentoring</h4>
+      <p>Personalized 1-on-1 counseling and sprint reviews from active agency CMOs and growth directors.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">04</div>
+      <h4>Free Lifetime Guidance</h4>
+      <p>Lifetime access to our 20,000+ alumni network, private job referral board, and quarterly AI updates.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">05</div>
+      <h4>University Curriculum</h4>
+      <p>Academically rigorous 18-credit framework recognized by Jain University (NAAC 'A++') and AICPE.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">06</div>
+      <h4>Resume & ATS Polish</h4>
+      <p>Craft recruiter-grade, ATS-optimized resumes and live web portfolios that guarantee hiring callbacks.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">07</div>
+      <h4>Mock Interview Clinics</h4>
+      <p>Realistic simulated interview rounds with live feedback from hiring partners before going on real calls.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">08</div>
+      <h4>100% Placement Support</h4>
+      <p>Dedicated career services cell arranging direct guaranteed interviews across our 500+ corporate tie-ups.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">09</div>
+      <h4>MBA-Level Program Rigor</h4>
+      <p>Strategic P&L thinking, Marketing Mix Modeling, CAC/LTV forecasting, and unit economics masterclasses.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">10</div>
+      <h4>100% Live Practical Training</h4>
+      <p>Real company ad budgets to spend in live labs. Experience real ROAS pressure instead of theoretical slides.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">11</div>
+      <h4>50+ AI Modules & 25+ Tools</h4>
+      <p>Hands-on mastery of Claude, Midjourney, n8n, Make.com, HubSpot AI, and Looker Studio attribution.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">12</div>
+      <h4>500+ Hiring Tie-Ups</h4>
+      <p>Direct hiring pipelines with Amazon, Accenture, Tata Digital, Schbang, Kinnect, Dentsu & Purplle.</p>
     </div>
   </div>
 </section>

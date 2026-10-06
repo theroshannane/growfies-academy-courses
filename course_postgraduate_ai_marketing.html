@@ -387,6 +387,52 @@ footer a:hover{color:#fff}
   flex: 1;
 }
 
+/* 12 Salient Pillars */
+.pillars-sec { padding: 40px 0 60px; }
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 32px;
+}
+.pillar-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-s);
+  padding: 22px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.02);
+  transition: transform .2s var(--e), border-color .2s;
+  position: relative;
+}
+.pillar-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--jade);
+  box-shadow: 0 10px 26px rgba(0,135,90,0.08);
+}
+.pillar-num {
+  font-family: var(--fm);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--jade);
+  background: var(--jade-50);
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.pillar-card h4 {
+  font-family: var(--fd);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.pillar-card p {
+  font-size: 13px;
+  color: var(--body);
+  line-height: 1.5;
+}
+
 @media(max-width:960px){
   .telemetry{grid-template-columns:repeat(2,1fr)}
   .market-stats-strip{grid-template-columns:1fr;gap:24px}
@@ -398,12 +444,14 @@ footer a:hover{color:#fff}
   .bonus-grid{grid-template-columns:1fr}
   .founder-grid{grid-template-columns:1fr}
   .alumni-grid{grid-template-columns:repeat(2,1fr)}
+  .pillars-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:640px){
   .telemetry{grid-template-columns:1fr}
   .crumb-bar{display:none}
   .footer-grid{grid-template-columns:1fr}
   .alumni-grid{grid-template-columns:1fr}
+  .pillars-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -1199,58 +1247,132 @@ footer a:hover{color:#fff}
   <div class="alumni-grid">
     <div class="alumni-card">
       <div class="alumni-top">
-        <img src="/courses/assets/student-kanishka.png" alt="Kanishka Singh" />
+        <img src="/courses/assets/student-kanishka.png" alt="Kanishka Chauhan" />
         <div>
-          <div class="alumni-name">Kanishka Singh</div>
-          <div class="alumni-role">Media Lead @ Schbang</div>
-          <div class="alumni-prev">Ex-Marketing Executive</div>
+          <div class="alumni-name">Kanishka Chauhan</div>
+          <div class="alumni-role">Alumni · PG in Digital Marketing</div>
+          <div class="alumni-prev">Media Lead @ Schbang</div>
         </div>
       </div>
       <p class="alumni-quote">
-        "The live ad budget spend gave me the exact hands-on data proof I needed during my interview. I cleared three rounds effortlessly and secured an 85% salary hike."
+        "MarketInc is India's top Digital Education institute giving the best Online, Live & PG Courses in Digital Marketing. Don't miss this opportunity and enroll now! Looking forward to seeing you there. Get ready to go to the future level!"
       </p>
     </div>
 
     <div class="alumni-card">
       <div class="alumni-top">
-        <img src="/courses/assets/student-rakhee.jpeg" alt="Rakhee Sawant" />
+        <img src="/courses/assets/student-rakhee.jpeg" alt="Rakhee Patil" />
         <div>
-          <div class="alumni-name">Rakhee Sawant</div>
-          <div class="alumni-role">Senior Performance Specialist</div>
-          <div class="alumni-prev">Tata Digital</div>
+          <div class="alumni-name">Rakhee Patil</div>
+          <div class="alumni-role">Digital Marketing Professional</div>
+          <div class="alumni-prev">Senior Specialist, Tata Digital</div>
         </div>
       </div>
       <p class="alumni-quote">
-        "Working directly with Roshan sir on real client accounts was the game-changer. The Agentic AI marketing workflows helped me double my CTC within 5 months of graduating."
+        "MarketInc is one of the best digital marketing courses in Thane, Mumbai. I really learned a lot from them and the way they teach and discuss things with us, I surely can say that it's unmatched. I wish everyone joins here who wants to make a career in digital marketing."
       </p>
     </div>
 
     <div class="alumni-card">
       <div class="alumni-top">
-        <img src="/courses/assets/student-swati.jpeg" alt="Swati Sharma" />
+        <img src="/courses/assets/student-swati.jpeg" alt="Swati Udupa" />
         <div>
-          <div class="alumni-name">Swati Sharma</div>
-          <div class="alumni-role">Growth Strategist</div>
-          <div class="alumni-prev">Dentsu Creative</div>
+          <div class="alumni-name">Swati Udupa</div>
+          <div class="alumni-role">Digital Growth Track</div>
+          <div class="alumni-prev">Growth Strategist, Dentsu Creative</div>
         </div>
       </div>
       <p class="alumni-quote">
-        "The dual JAINx and AICPE certificate carries immense institutional weight. Combined with Looker Studio ROI dashboards in my portfolio, top agency recruiters noticed me immediately."
+        "Very thoroughly planned courses on Digital Marketing with the use of latest technological tools to keep you up-to-date with today's world. With more than 10 years of experience in the field of Digital Marketing, MarketInc has helped numerous people achieve their goals."
       </p>
     </div>
 
     <div class="alumni-card">
       <div class="alumni-top">
-        <img src="/courses/assets/student-mavia.png" alt="Mavia Shaikh" />
+        <img src="/courses/assets/student-mavia.png" alt="Mavia Fernandes" />
         <div>
-          <div class="alumni-name">Mavia Shaikh</div>
-          <div class="alumni-role">Digital Associate</div>
-          <div class="alumni-prev">Media.net</div>
+          <div class="alumni-name">Mavia Fernandes</div>
+          <div class="alumni-role">AI & Automation Specialist</div>
+          <div class="alumni-prev">Digital Associate, Media.net</div>
         </div>
       </div>
       <p class="alumni-quote">
-        "From day 1 in the ₹29k Bridge course, everything was structured and practical. No fluff, just real agency execution. Got placed before the final module ended!"
+        "MarketInc - The Pinnacle of Excellence and Quality! Introducing a cutting-edge marketing automation programme built in collaboration with industry and academics that will provide you with all of the abilities you require. Get ready for a digitalised future!"
       </p>
+    </div>
+  </div>
+</section>
+
+<!-- 12 SALIENT PILLARS (MARKETINC INSTITUTIONAL ARCHITECTURE) -->
+<section class="wrap pillars-sec" id="pillars">
+  <div style="text-align:center;max-width:760px;margin:0 auto">
+    <span class="sec-badge">Built by MarketInc</span>
+    <h2 class="sec-heading" style="font-family:var(--fd);font-size:32px;font-weight:900;color:var(--ink);margin-bottom:8px">12 Salient Pillars of Our Academy</h2>
+    <p class="sec-sub" style="font-size:15px;color:var(--body);line-height:1.6">
+      Every element engineered to bridge the gap between academic theory and real-world high-paying performance leadership.
+    </p>
+  </div>
+
+  <div class="pillars-grid">
+    <div class="pillar-card">
+      <div class="pillar-num">01</div>
+      <h4>Digital Skills with AI</h4>
+      <p>Master AI-native marketing workflows, prompt engineering, and automated campaign ops from day one.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">02</div>
+      <h4>65+ Global Certifications</h4>
+      <p>Dual credentials co-certified with JAINx, AICPE, plus Google, Meta, HubSpot & SEMrush mapped badges.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">03</div>
+      <h4>1:1 Career Mentoring</h4>
+      <p>Personalized 1-on-1 counseling and sprint reviews from active agency CMOs and growth directors.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">04</div>
+      <h4>Free Lifetime Guidance</h4>
+      <p>Lifetime access to our 20,000+ alumni network, private job referral board, and quarterly AI updates.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">05</div>
+      <h4>University Curriculum</h4>
+      <p>Academically rigorous 18-credit framework recognized by Jain University (NAAC 'A++') and AICPE.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">06</div>
+      <h4>Resume & ATS Polish</h4>
+      <p>Craft recruiter-grade, ATS-optimized resumes and live web portfolios that guarantee hiring callbacks.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">07</div>
+      <h4>Mock Interview Clinics</h4>
+      <p>Realistic simulated interview rounds with live feedback from hiring partners before going on real calls.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">08</div>
+      <h4>100% Placement Support</h4>
+      <p>Dedicated career services cell arranging direct guaranteed interviews across our 500+ corporate tie-ups.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">09</div>
+      <h4>MBA-Level Program Rigor</h4>
+      <p>Strategic P&L thinking, Marketing Mix Modeling, CAC/LTV forecasting, and unit economics masterclasses.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">10</div>
+      <h4>100% Live Practical Training</h4>
+      <p>Real company ad budgets to spend in live labs. Experience real ROAS pressure instead of theoretical slides.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">11</div>
+      <h4>50+ AI Modules & 25+ Tools</h4>
+      <p>Hands-on mastery of Claude, Midjourney, n8n, Make.com, HubSpot AI, and Looker Studio attribution.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-num">12</div>
+      <h4>500+ Hiring Tie-Ups</h4>
+      <p>Direct hiring pipelines with Amazon, Accenture, Tata Digital, Schbang, Kinnect, Dentsu & Purplle.</p>
     </div>
   </div>
 </section>
