@@ -27,6 +27,12 @@ if [ -d "$REPO_DIR/courses/assets" ]; then
     cp -rv "$REPO_DIR"/courses/assets/* "$TARGET/assets/"
 fi
 
+# 3b. Remove deprecated profile assets
+echo "Purging any deprecated profile assets from target..."
+rm -f "$TARGET/assets/roshan-nane-founder.png" "$TARGET/assets/founder-credentials-full.png"
+rm -f "$TARGET/courses/assets/roshan-nane-founder.png" "$TARGET/courses/assets/founder-credentials-full.png"
+
+
 # 4. Check and update redirects.map
 if [ -f "$TARGET/redirects.map" ]; then
     echo "Inspecting redirects.map for /courses redirect..."
